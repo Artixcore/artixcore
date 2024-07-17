@@ -1,0 +1,347 @@
+<!-- Header START -->
+<header class="header-sticky header-absolute">
+	<!-- Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			<a class="navbar-brand me-0" href="{{url('/')}}">
+				<img class="light-mode-item navbar-brand-item" src="{{asset('logo.png')}}" alt="logo">
+			</a>
+			<!-- Logo END -->
+
+			<!-- Main navbar START -->
+			<div class="navbar-collapse collapse" id="navbarCollapse">
+				<ul class="navbar-nav navbar-nav-scroll dropdown-hover mx-auto">
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Service</a>
+						<ul class="dropdown-menu">
+							<!-- Dropdown submenu -->
+							<li class="dropdown dropend">
+								<a class="nav-link dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">About</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="about-v1.html">About v.1</a></li>
+									<li> <a class="dropdown-item" href="about-v2.html">About v.2</a></li>
+									<li> <a class="dropdown-item" href="about-v3.html">About v.3</a></li>
+									<li> <a class="dropdown-item" href="team.html">Team</a></li>
+									<li> <a class="dropdown-item" href="services-v1.html">Services v.1</a></li>
+									<li> <a class="dropdown-item" href="services-v2.html">Services v.2</a></li>
+									<li> <a class="dropdown-item" href="service-single.html">Service Single</a></li>
+									<li> <a class="dropdown-item" href="customer-stories.html">Customer Stories</a></li>
+									<li> <a class="dropdown-item" href="customer-story-single.html">Customer Story Single</a></li>
+									<li> <a class="dropdown-item" href="career.html">Career <span class="badge text-bg-primary ms-2">2 Job</span></a></li>
+									<li> <a class="dropdown-item" href="career-single.html">Career Single</a></li>
+								</ul>
+							</li>
+
+							<li> <a class="dropdown-item" href="contact-v1.html">Contact v.1</a></li>
+							<li> <a class="dropdown-item" href="contact-v2.html">Contact v.2</a></li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown dropend">
+								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">SaaS Pages</a>
+								<ul class="dropdown-menu">
+									<li> <a class="dropdown-item" href="features.html">Features</a></li>
+									<li> <a class="dropdown-item" href="feature-single.html">Feature Single</a></li>
+									<li> <a class="dropdown-item" href="integrations.html">Integrations</a></li>
+									<li> <a class="dropdown-item" href="integration-single.html">Integration Single</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown dropend">
+								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Shop</a>
+								<ul class="dropdown-menu" >
+									<li> <a class="dropdown-item" href="shop-grid.html">Shop Grid</a></li>
+									<li> <a class="dropdown-item" href="shop-single.html">Shop Single</a></li>
+									<li> <a class="dropdown-item" href="shop-cart.html">Shop Cart</a></li>
+									<li> <a class="dropdown-item" href="shop-empty-cart.html">Shop Empty Cart</a></li>
+									<li> <a class="dropdown-item" href="shop-checkout.html">Shop Checkout</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown dropend">
+								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Blog</a>
+								<ul class="dropdown-menu" >
+									<li> <a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
+									<li> <a class="dropdown-item" href="blog-list-sidebar.html">Blog List Sidebar</a></li>
+									<li> <a class="dropdown-item" href="blog-single-v1.html">Blog Single v.1</a></li>
+									<li> <a class="dropdown-item" href="blog-single-v2.html">Blog Single v.2</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown dropend">
+								<a class="nav-link dropdown-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Specialty Pages</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="help-center.html">Help Center</a></li>
+									<li> <a class="dropdown-item" href="help-center-detail.html">Help Center Detail</a></li>
+									<li> <a class="dropdown-item" href="pricing.html">Pricing</a></li>
+									<li> <a class="dropdown-item" href="faq.html">Faqs</a></li>
+									<li> <a class="dropdown-item" href="error-404.html">Error 404</a></li>
+									<li> <a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
+									<li> <a class="dropdown-item" href="terms-and-condition.html">Terms & Conditions</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown dropend">
+								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Authentication</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
+									<li> <a class="dropdown-item" href="sign-in.html">Sign In</a></li>
+									<li> <a class="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown submenu -->
+							<li class="dropdown dropend">
+								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">Accounts</a>
+								<ul class="dropdown-menu" data-bs-popper="none">
+									<li> <a class="dropdown-item" href="account-detail.html">Details</a></li>
+									<li> <a class="dropdown-item" href="account-security.html">Security</a></li>
+									<li> <a class="dropdown-item" href="account-notification.html">Notifications</a></li>
+									<li> <a class="dropdown-item" href="account-projects.html">My Projects</a></li>
+									<li> <a class="dropdown-item" href="account-payment-details.html">Payment Details</a></li>
+									<li> <a class="dropdown-item" href="account-order.html">Order History</a></li>
+									<li> <a class="dropdown-item" href="account-wishlist.html">Wishlist</a></li>
+									<li> <a class="dropdown-item" href="account-delete.html">Delete Profile</a></li>
+								</ul>
+							</li>
+
+							<!-- Dropdown divider -->
+							<li> <hr class="dropdown-divider"></li>
+
+							<!-- Dropdown Multilevel -->
+							<li class="dropdown dropend">
+								<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">Dropdown levels</a>
+								<ul class="dropdown-menu">
+
+									<!-- dropdown submenu open right -->
+										<li class="dropdown dropend">
+											<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">Dropdown (end)</a>
+											<ul class="dropdown-menu">
+												<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+												<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+											</ul>
+										</li>
+									<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+
+									<!-- dropdown submenu open left -->
+									<li class="dropdown dropstart">
+										<a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">Dropdown (start)</a>
+										<ul class="dropdown-menu">
+											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+											<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+										</ul>
+									</li>
+									<li> <a class="dropdown-item" href="#">Dropdown item</a> </li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown dropdown-fullwidth">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+						<div class="dropdown-menu py-0">
+							<div class="row p-2 p-sm-4">
+								<!-- Dropdown column item -->
+								<div class="col-md-6 col-xl-4 col-xxl-3">
+									<div class="d-md-flex gap-4 h-100">
+										<!-- Links -->
+										<ul class="list-unstyled w-100">
+											<li class="dropdown-header h6 mb-2">Useful links</li>
+											<li> <a class="dropdown-item" href="#"><i class="bi bi-file-text fa-fw me-2"></i>Guides</a> </li>
+											<li> <a class="dropdown-item" href="#"><i class="bi bi-chat-left fa-fw me-2"></i>Supports</a> </li>
+											<li> <a class="dropdown-item" href="#"><i class="bi bi-calendar3-week fa-fw me-2"></i>Community & events</a> </li>
+											<li> <a class="dropdown-item" href="#"><i class="bi bi-blockquote-right fa-fw me-2"></i>Blogs</a> </li>
+											<li> <a class="dropdown-item" href="#"><i class="bi bi-lock fa-fw me-2"></i>Security</a> </li>
+											<li> <a class="dropdown-item" href="#"><i class="bi bi-star fa-fw me-2"></i>Tutorials</a> </li>
+											<li> <a class="dropdown-item" href="#"><i class="bi bi-question-circle fa-fw me-2"></i>Help center</a> </li>
+											<li> <a class="dropdown-item" href="#"><i class="bi bi-envelope fa-fw me-2"></i>Developer newsletter</a> </li>
+										</ul>
+										<!-- Divider line -->
+										<div class="vr ms-2 ms-auto d-none d-md-block"></div>
+									</div>
+								</div>
+
+								<!-- Dropdown column item -->
+								<div class="col-md-6 col-xl-4 col-xxl-5 h-100">
+									<span class="dropdown-header h6 mb-2">Key features</span>
+
+									<!-- Dropdown item -->
+									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+										<div class="d-flex me-3">
+											<!-- Icon -->
+											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi-file-earmark-text heading-color fs-6"></i></div>
+											<!-- Content -->
+											<div class="mx-2">
+												<p class="stretched-link heading-color fw-bold mb-0">Documentation</p>
+												<p class="mb-0 text-body small">Using documentation you can easily develop projects</p>
+											</div>
+										</div>
+										<!-- Button -->
+										<a class="icon-link icon-link-hover text-primary-hover stretched-link" href="docs/index.html" target="_blank"><i class="bi bi-chevron-right"></i> </a>
+									</div>
+
+									<!-- Dropdown item -->
+									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+										<div class="d-flex me-3">
+											<!-- Icon -->
+											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-stickies heading-color fs-6"></i></div>
+											<!-- Content -->
+											<div class="mx-2">
+												<p class="stretched-link heading-color fw-bold mb-0">Snippets</p>
+												<p class="mb-0 text-body small">Development guides for building projects with Mizzle</p>
+											</div>
+										</div>
+										<!-- Button -->
+										<a class="icon-link icon-link-hover text-primary-hover stretched-link" href="#"><i class="bi bi-chevron-right"></i> </a>
+									</div>
+
+									<!-- Dropdown item -->
+									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+										<div class="d-flex me-3">
+											<!-- Icon -->
+											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-bullseye heading-color fs-6"></i></div>
+											<!-- Content -->
+											<div class="mx-2">
+												<p class="stretched-link heading-color fw-bold mb-0">Changelog</p>
+												<p class="mb-0 text-body small">Recent feature release and announcement. See how changes are made.</p>
+											</div>
+										</div>
+										<!-- Button -->
+										<a class="icon-link icon-link-hover text-primary-hover stretched-link" href="docs/changelog.html" target="_blank"><i class="bi bi-box-arrow-up-right"></i> </a>
+									</div>
+
+									<!-- Dropdown item -->
+									<div class="dropdown-item bg-light-hover d-flex align-items-center justify-content-between position-relative text-wrap py-3">
+										<div class="d-flex me-3">
+											<!-- Icon -->
+											<div class="icon-md border bg-body rounded flex-shrink-0"><i class="bi bi-mask heading-color fs-6"></i></div>
+											<!-- Content -->
+											<div class="mx-2">
+												<a class="stretched-link heading-color fw-bold mb-0" href="#">Playwright tips</a>
+												<p class="mb-0 text-body small">Tips and In-depth guide for headless browser automation</p>
+											</div>
+										</div>
+										<!-- Button -->
+										<a class="icon-link icon-link-hover text-primary-hover stretched-link" href="#"><i class="bi bi-chevron-right"></i> </a>
+									</div>
+								</div>
+
+								<!-- Feature resources card -->
+								<div class="col-lg-4">
+									<span class="dropdown-header h6 mb-2">Feature resources</span>
+
+									<!-- Feature card -->
+									<div class="card bg-transparent px-3">
+										<!-- Image -->
+										<img src="assets/images/blog/02.jpg" class="rounded mb-3" alt="feature-img">
+										<div class="card-body p-0">
+											<h6><a href="#">Featured title here</a></h6>
+											<p class="mb-2">Departure defective arranging rapturous did believe him all had supported.</p>
+											<a class="icon-link icon-link-hover stretched-link z-index-2" href="#">Check it out<i class="bi bi-arrow-right"></i> </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+							<div class="dropdown-menu dropdown-menu-center dropdown-menu-size-xl p-3">
+								<div class="row g-xl-3">
+									<!-- Work -->
+									<div class="col-xl-8 d-none d-xl-block">
+										<div class="d-flex gap-4">
+											<!-- Card -->
+											<div class="card bg-transparent">
+												<!-- Image -->
+												<img src="assets/images/portfolio/list/01.jpg" class="card-img" alt="">
+												<!-- Card body -->
+												<div class="card-body px-0 text-start pb-0">
+													<h6><a href="#">Ceremony Worthy of Time</a></h6>
+													<p class="mb-2 small">We help our customers better manage their web presence.</p>
+													<a class="icon-link icon-link-hover stretched-link mb-0" href="portfolio-case-studies-v1.html">Learn more<i class="bi bi-arrow-right"></i> </a>
+												</div>
+											</div>
+
+											<!-- Card -->
+											<div class="card bg-transparent">
+												<!-- Image -->
+												<img src="assets/images/portfolio/list/02.jpg" class="card-img" alt="">
+												<!-- Card body -->
+												<div class="card-body px-0 text-start pb-0">
+													<h6><a href="#">Brushstrokes and Beyond</a></h6>
+													<p class="mb-2 small">We help our customers better manage their web presence.</p>
+													<a class="icon-link icon-link-hover stretched-link mb-0" href="portfolio-case-studies-v2.html">Learn more<i class="bi bi-arrow-right"></i> </a>
+												</div>
+											</div>
+
+											<!-- Divider line -->
+											<div class="vr ms-2"></div>
+										</div>
+									</div>
+
+									<!-- Index nav links -->
+									<div class="col-xl-4">
+										<ul class="list-unstyled">
+											<li class="dropdown-header h6">Portfolio Pages</li>
+											<li> <a class="dropdown-item" href="portfolio-masonry.html">Portfolio Masonry</a> </li>
+											<li> <a class="dropdown-item" href="portfolio-showcase.html">Portfolio Showcase</a> </li>
+											<li> <a class="dropdown-item" href="portfolio-list.html">Portfolio List</a> </li>
+											<li> <a class="dropdown-item" href="portfolio-case-studies-v1.html">Portfolio Case Study v.1</a> </li>
+											<li> <a class="dropdown-item" href="portfolio-case-studies-v2.html">Portfolio Case Study v.2</a> </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+					</li>
+
+					<!-- Nav item -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-haspopup="true" aria-expanded="false">Our Companies</a>
+						<ul class="dropdown-menu">
+							<!-- Dropdown submenu -->
+							<li> <a class="dropdown-item" href="">Artixcore</a></li>
+							<li> <a class="dropdown-item" href="">Zannatunnesa</a></li>
+							<li> <a class="dropdown-item" href="">Profiler</a></li>
+							<li> <a class="dropdown-item" href="">TradeasyPOS</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+			<!-- Main navbar END -->
+
+			<!-- Buttons -->
+			<ul class="nav align-items-center dropdown-hover ms-sm-2">
+
+				<!-- Buy now button -->
+				<li class="nav-item d-none d-sm-block">
+					<a href="{{url('contact')}}" class="btn btn-sm btn-primary mb-0">Contact</a>
+				</li>
+
+				<!-- Responsive navbar toggler -->
+				<li class="nav-item">
+					<button class="navbar-toggler ms-sm-3 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-animation">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+				</li>
+			</ul>
+
+		</div>
+	</nav>
+	<!-- Nav END -->
+</header>
+<!-- Header END -->
