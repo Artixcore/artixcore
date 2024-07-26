@@ -13,7 +13,7 @@
             </li>
             {{-- <li class="sidebar-item active"> --}}
             <li class="sidebar-item">
-                <a class="sidebar-link">
+                <a class="sidebar-link" href="{{route('dashboard')}}">
                     <i class="align-middle me-2 fas fa-fw fa-home"></i> <span class="align-middle">Dashboards</span>
                 </a>
             </li>
@@ -61,6 +61,7 @@
                     <i class="align-middle me-2 fas fa-fw fa-flask"></i> <span class="align-middle">Pages</span>
                 </a>
                 <ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{route('pages.hero')}}">Hero Page</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Home Page</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Header Menu</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Footer Menu</a></li>

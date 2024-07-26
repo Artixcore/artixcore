@@ -4,7 +4,6 @@
 @endsection
 @section('content')
 @include('frontend.Home.hero')
-{{-- @include('frontend.Home.client') --}}
 @include('frontend.Home.mission')
 @include('frontend.Home.service')
 @include('frontend.Home.testimonial')

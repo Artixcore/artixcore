@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('artixcore_photos', function (Blueprint $table) {
             $table->id();
+            $table->string('user_id');
             $table->string('number');
+            $table->string('image_for');
             $table->string('image_from');
             $table->string('image_title');
             $table->string('user_id')->nullable();

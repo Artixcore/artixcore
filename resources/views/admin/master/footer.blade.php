@@ -19,7 +19,7 @@
             </div>
             <div class="col-4 text-end">
                 <p class="mb-0">
-                    &copy; 2023 - <a class='text-muted' href='dashboard-default.html'>Spark</a>
+                    &copy; 2023 - <a class="text-muted" href="https://artixcore.com">Artixcore</a>
                 </p>
             </div>
         </div>

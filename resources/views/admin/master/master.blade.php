@@ -16,7 +16,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Plugins CSS -->
-    <script src="{{ asset('js/settings.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('css/modern.css')}}">
 
     @yield('style_css')
 
@@ -38,7 +38,15 @@
 
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
-
+    @yield('footer_js')
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			// Datatables Responsive
+			$("#datatables-reponsive").DataTable({
+				responsive: true
+			});
+		});
+	</script>
 </body>
 
 </html>

@@ -7,11 +7,24 @@ use Throwable;
 
 class Handler extends ExceptionHandler
 {
+    public function render($request, Throwable $exception)
+    {
+        if ($this->isHttpException($exception)) {
+            $statusCode = $exception->getStatusCode();
+
+            if ($statusCode == 404) {
+                return response()->view('404', [], 404);
+            }
+        }
+
+        return parent::render($request, $exception);
+    }
     /**
      * The list of the inputs that are never flashed to the session on validation exceptions.
      *
      * @var array<int, string>
      */
+
     protected $dontFlash = [
         'current_password',
         'password',

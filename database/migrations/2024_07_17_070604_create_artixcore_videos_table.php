@@ -13,7 +13,9 @@ return new class extends Migration
     {
         Schema::create('artixcore_videos', function (Blueprint $table) {
             $table->id();
+            $table->string('user_id');
             $table->string('number');
+            $table->string('video_for');
             $table->string('video_from');
             $table->string('video_title');
             $table->string('user_id')->nullable();

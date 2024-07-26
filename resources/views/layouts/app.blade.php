@@ -9,7 +9,11 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="icon" href="{{ asset('logo.png') }}" type="image/x-icon">
+
     @yield('meta')
+
+    @yield('seo_tags')
+    @yield('from admin_seo_tags')
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -22,6 +26,14 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/vendor/aos/aos.css') }}">
     <!-- Theme CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
+
+    {{-- <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/vendor/autocomplete/dist/css/autocomplete.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
+    <script type="text/javascript" src="{{ asset('assets/js/theme-appearance.js') }}"></script> --}}
 
     @yield('style_css')
 
