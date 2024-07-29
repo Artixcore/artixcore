@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('image_for');
             $table->string('image_from');
             $table->string('image_title');
-            $table->string('user_id')->nullable();
             $table->string('image_file');
             $table->timestamps();
         });

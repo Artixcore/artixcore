@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('video_for');
             $table->string('video_from');
             $table->string('video_title');
-            $table->string('user_id')->nullable();
             $table->string('video_file');
             $table->timestamps();
         });

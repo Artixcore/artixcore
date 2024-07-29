@@ -1,138 +1,139 @@
 <header class="header-absolute header-sticky">
-	<!-- Nav START -->
-	<nav class="navbar navbar-expand-xl">
-		<div class="container">
-			<!-- Logo START -->
-			<a class="navbar-brand" href="{{url('/')}}">
-                <img class="light-mode-item navbar-brand-item" src="{{ asset('logo.png') }}" title="Artixcore" alt="Artixcore logo">
-			</a>
-			<!-- Logo END -->
+    <!-- Nav START -->
+    <nav class="navbar navbar-expand-xl">
+        <div class="container">
+            <!-- Logo START -->
+            <a class="navbar-brand" href="{{ url('/') }}">
+                <img class="light-mode-item navbar-brand-item" src="{{ asset('logo.png') }}" title="Artixcore"
+                    alt="Artixcore logo">
+            </a>
+            <!-- Logo END -->
 
-			<!-- Main navbar START -->
-			<div class="navbar-collapse collapse" id="navbarCollapse">
-				<ul class="navbar-nav navbar-nav-scroll dropdown-hover ms-auto">
-
-                            <!-- Nav item -->
-                            <li class="nav-item dropdown dropdown-fullwidth">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">Resources</a>
-                                <div class="dropdown-menu py-0">
-                                    <div class="row p-2 p-sm-4">
-                                        <!-- Feature resources card -->
-                                        <div class="col-lg-3">
-                                            <span class="dropdown-header h6 mb-2">Feature resources</span>
-
-                                            <!-- Feature card -->
-                                            <div class="card bg-transparent px-3">
-                                                <!-- Image -->
-                                                <img src="assets/images/blog/02.jpg" class="rounded mb-3" alt="feature-img">
-                                                <div class="card-body p-0">
-                                                    <h6><a href="#">Featured title here</a></h6>
-                                                    <p class="mb-2">Departure defective arranging rapturous did believe him
-                                                        all had supported.</p>
-                                                    <a class="icon-link icon-link-hover stretched-link z-index-2"
-                                                        href="#">Check it out<i class="bi bi-arrow-right"></i> </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Dropdown column item -->
-                                        <div class="col-lg-3">
-                                            <div class="d-md-flex gap-4 h-100">
-                                                <!-- Links -->
-                                                <ul class="list-unstyled w-100">
-                                                    <li class="dropdown-header h6 mb-2">Useful links</li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-file-text fa-fw me-2"></i>Guides</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-chat-left fa-fw me-2"></i>Supports</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-calendar3-week fa-fw me-2"></i>Community &
-                                                            events</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-blockquote-right fa-fw me-2"></i>Blogs</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-lock fa-fw me-2"></i>Security</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-star fa-fw me-2"></i>Tutorials</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-question-circle fa-fw me-2"></i>Help center</a>
-                                                    </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-envelope fa-fw me-2"></i>Developer newsletter</a>
-                                                    </li>
-                                                </ul>
-                                                <!-- Divider line -->
-                                                <div class="vr ms-2 ms-auto d-none d-md-block"></div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3">
-                                            <div class="d-md-flex gap-4 h-100">
-                                                <!-- Links -->
-                                                <ul class="list-unstyled w-100">
-                                                    <li class="dropdown-header h6 mb-2">Useful links</li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-file-text fa-fw me-2"></i>Guides</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-chat-left fa-fw me-2"></i>Supports</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-calendar3-week fa-fw me-2"></i>Community &
-                                                            events</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-blockquote-right fa-fw me-2"></i>Blogs</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-lock fa-fw me-2"></i>Security</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-star fa-fw me-2"></i>Tutorials</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-question-circle fa-fw me-2"></i>Help center</a>
-                                                    </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-envelope fa-fw me-2"></i>Developer newsletter</a>
-                                                    </li>
-                                                </ul>
-                                                <!-- Divider line -->
-                                                <div class="vr ms-2 ms-auto d-none d-md-block"></div>
-                                            </div>
-                                        </div>
-                                        <!-- Dropdown column item -->
-                                        <div class=" col-lg-3">
-                                            <div class="d-md-flex gap-4 h-100">
-                                                <!-- Links -->
-                                                <ul class="list-unstyled w-100">
-                                                    <li class="dropdown-header h6 mb-2">Useful links</li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-file-text fa-fw me-2"></i>Guides</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-chat-left fa-fw me-2"></i>Supports</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-calendar3-week fa-fw me-2"></i>Community &
-                                                            events</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-blockquote-right fa-fw me-2"></i>Blogs</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-lock fa-fw me-2"></i>Security</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-star fa-fw me-2"></i>Tutorials</a> </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-question-circle fa-fw me-2"></i>Help center</a>
-                                                    </li>
-                                                    <li> <a class="dropdown-item" href="#"><i
-                                                                class="bi bi-envelope fa-fw me-2"></i>Developer newsletter</a>
-                                                    </li>
-                                                </ul>
-                                                <!-- Divider line -->
-
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </li>
+            <!-- Main navbar START -->
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-scroll dropdown-hover ms-auto">
 
                     <!-- Nav item -->
                     <li class="nav-item dropdown dropdown-fullwidth">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Resources</a>
+                            aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu py-0">
+                            <div class="row p-2 p-sm-4">
+                                <!-- Feature resources card -->
+                                <div class="col-lg-3">
+                                    <span class="dropdown-header h6 mb-2">Feature resources</span>
+
+                                    <!-- Feature card -->
+                                    <div class="card bg-transparent px-3">
+                                        <!-- Image -->
+                                        <img src="assets/images/blog/02.jpg" class="rounded mb-3" alt="feature-img">
+                                        <div class="card-body p-0">
+                                            <h6><a href="#">Featured title here</a></h6>
+                                            <p class="mb-2">Departure defective arranging rapturous did believe him
+                                                all had supported.</p>
+                                            <a class="icon-link icon-link-hover stretched-link z-index-2"
+                                                href="#">Check it out<i class="bi bi-arrow-right"></i> </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Dropdown column item -->
+                                <div class="col-lg-3">
+                                    <div class="d-md-flex gap-4 h-100">
+                                        <!-- Links -->
+                                        <ul class="list-unstyled w-100">
+                                            <li class="dropdown-header h6 mb-2">Useful links</li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-file-text fa-fw me-2"></i>Guides</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-chat-left fa-fw me-2"></i>Supports</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-calendar3-week fa-fw me-2"></i>Community &
+                                                    events</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-blockquote-right fa-fw me-2"></i>Blogs</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-lock fa-fw me-2"></i>Security</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-star fa-fw me-2"></i>Tutorials</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-question-circle fa-fw me-2"></i>Help center</a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-envelope fa-fw me-2"></i>Developer newsletter</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Divider line -->
+                                        <div class="vr ms-2 ms-auto d-none d-md-block"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="d-md-flex gap-4 h-100">
+                                        <!-- Links -->
+                                        <ul class="list-unstyled w-100">
+                                            <li class="dropdown-header h6 mb-2">Useful links</li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-file-text fa-fw me-2"></i>Guides</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-chat-left fa-fw me-2"></i>Supports</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-calendar3-week fa-fw me-2"></i>Community &
+                                                    events</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-blockquote-right fa-fw me-2"></i>Blogs</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-lock fa-fw me-2"></i>Security</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-star fa-fw me-2"></i>Tutorials</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-question-circle fa-fw me-2"></i>Help center</a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-envelope fa-fw me-2"></i>Developer newsletter</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Divider line -->
+                                        <div class="vr ms-2 ms-auto d-none d-md-block"></div>
+                                    </div>
+                                </div>
+                                <!-- Dropdown column item -->
+                                <div class=" col-lg-3">
+                                    <div class="d-md-flex gap-4 h-100">
+                                        <!-- Links -->
+                                        <ul class="list-unstyled w-100">
+                                            <li class="dropdown-header h6 mb-2">Useful links</li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-file-text fa-fw me-2"></i>Guides</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-chat-left fa-fw me-2"></i>Supports</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-calendar3-week fa-fw me-2"></i>Community &
+                                                    events</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-blockquote-right fa-fw me-2"></i>Blogs</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-lock fa-fw me-2"></i>Security</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-star fa-fw me-2"></i>Tutorials</a> </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-question-circle fa-fw me-2"></i>Help center</a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#"><i
+                                                        class="bi bi-envelope fa-fw me-2"></i>Developer newsletter</a>
+                                            </li>
+                                        </ul>
+                                        <!-- Divider line -->
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Nav item -->
+                    <li class="nav-item dropdown dropdown-fullwidth">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Industries</a>
                         <div class="dropdown-menu py-0">
                             <div class="row p-2 p-sm-4">
                                 <!-- Feature resources card -->

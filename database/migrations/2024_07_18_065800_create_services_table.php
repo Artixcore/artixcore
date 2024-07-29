@@ -15,11 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('user_id');
             $table->string('service_image');
-            $table->string('service_name');
-            $table->string('icon');
-            $table->string('short_desc');
-            $table->string('url')->nullable();
-            $table->string('user_id');
+            $table->string('article_number');
             $table->timestamps();
         });
     }

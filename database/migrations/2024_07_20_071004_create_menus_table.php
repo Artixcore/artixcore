@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('menu');
             $table->string('menu_link');
             $table->string('menu_image');
-            $table->string('menu_image');
             $table->string('status');
             $table->timestamps();
         });

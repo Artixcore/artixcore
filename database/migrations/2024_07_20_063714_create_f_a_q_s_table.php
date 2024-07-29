@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('number');
             $table->string('user_id');
             $table->string('page')->nullable();
+            $table->string('article_number')->nullable();
             $table->string('project_id')->nullable();
             $table->string('product_id')->nullable();
             $table->string('question');

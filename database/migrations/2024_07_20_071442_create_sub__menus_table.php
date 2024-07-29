@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('submenu');
             $table->string('submenu_link');
             $table->string('submenu_image');
-            $table->string('submenu_image');
             $table->timestamps();
         });
     }

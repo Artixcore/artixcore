@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('online');
             $table->string('offline');
             $table->string('total_user');
+            $table->string('user_id')->nullable();
             $table->timestamps();
         });
     }

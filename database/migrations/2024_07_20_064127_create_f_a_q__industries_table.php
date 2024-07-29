@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('user_id');
             $table->string('number');
+            $table->string('article_number')->nullable();
             $table->string('industry_name');
             $table->string('industry_type');
             $table->string('industry_image');
