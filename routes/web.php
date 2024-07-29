@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Auth\LoginController;
+
 use App\Http\Controllers\Superadmin\SuperadminDashboardController;
 use App\Http\Controllers\Admin\AdminDashboardController;
 use App\Http\Controllers\SEO\SEODashboardController;
@@ -11,6 +13,7 @@ use App\Http\Controllers\Writer\WriterDashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\HeroController;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Http\Controllers\ImageUploadController;
 
 
 
@@ -44,7 +47,15 @@ Route::get('/dashboard', function () {
 
 Route::get('pages/hero', [HeroController::class, 'index'])->name('pages.hero');
 
-Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+
+Route::group(['middleware' => ['auth:sanctum']], function () {
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+});
+
+
+Route::post('/upload-image', [ImageUploadController::class, 'uploadImage'])->name('upload.image');
+// Route::post('/submit-form', [FormController::class, 'store'])->name('submit.form');
+
 
 Auth::routes();
 

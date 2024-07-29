@@ -16,7 +16,7 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="{{ asset('css/modern.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/modern.css') }}">
 
     @yield('style_css')
 
@@ -26,27 +26,29 @@
 
     <div class="wrapper">
 
-        @include('admin.master.side')
+        @include('superadmin.master.side')
 
         <div class="main">
-            @include('admin.master.nav')
+
+            @include('superadmin.master.nav')
+
             @yield('content')
 
-            @include('admin.master.footer')
+            @include('superadmin.master.footer')
 
         </div>
 
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('footer_js')
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Datatables Responsive
-			$("#datatables-reponsive").DataTable({
-				responsive: true
-			});
-		});
-	</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Datatables Responsive
+            $("#datatables-reponsive").DataTable({
+                responsive: true
+            });
+        });
+    </script>
 </body>
 
 </html>

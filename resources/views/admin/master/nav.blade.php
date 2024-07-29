@@ -10,7 +10,8 @@
     <div class="navbar-collapse collapse">
         <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle position-relative" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
+                <a class="nav-link dropdown-toggle position-relative" href="#" id="messagesDropdown"
+                    data-bs-toggle="dropdown">
                     <i class="align-middle fas fa-envelope-open"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
@@ -23,11 +24,13 @@
                         <a href="#" class="list-group-item">
                             <div class="row g-0 align-items-center">
                                 <div class="col-2">
-                                    <img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Michelle Bilodeau">
+                                    <img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle"
+                                        alt="Michelle Bilodeau">
                                 </div>
                                 <div class="col-10 ps-2">
                                     <div class="text-dark">Michelle Bilodeau</div>
-                                    <div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+                                    <div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.
+                                    </div>
                                     <div class="text-muted small mt-1">5m ago</div>
                                 </div>
                             </div>
@@ -35,7 +38,8 @@
                         <a href="#" class="list-group-item">
                             <div class="row g-0 align-items-center">
                                 <div class="col-2">
-                                    <img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Kathie Burton">
+                                    <img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle"
+                                        alt="Kathie Burton">
                                 </div>
                                 <div class="col-10 ps-2">
                                     <div class="text-dark">Kathie Burton</div>
@@ -47,7 +51,8 @@
                         <a href="#" class="list-group-item">
                             <div class="row g-0 align-items-center">
                                 <div class="col-2">
-                                    <img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="Alexander Groves">
+                                    <img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle"
+                                        alt="Alexander Groves">
                                 </div>
                                 <div class="col-10 ps-2">
                                     <div class="text-dark">Alexander Groves</div>
@@ -59,11 +64,13 @@
                         <a href="#" class="list-group-item">
                             <div class="row g-0 align-items-center">
                                 <div class="col-2">
-                                    <img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Daisy Seger">
+                                    <img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle"
+                                        alt="Daisy Seger">
                                 </div>
                                 <div class="col-10 ps-2">
                                     <div class="text-dark">Daisy Seger</div>
-                                    <div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+                                    <div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac,
+                                        mattis non.</div>
                                     <div class="text-muted small mt-1">5h ago</div>
                                 </div>
                             </div>
@@ -75,7 +82,8 @@
                 </div>
             </li>
             <li class="nav-item dropdown ms-lg-2">
-                <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+                <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown"
+                    data-bs-toggle="dropdown">
                     <i class="align-middle fas fa-bell"></i>
                     <span class="indicator"></span>
                 </a>
@@ -103,7 +111,8 @@
                                 </div>
                                 <div class="col-10">
                                     <div class="text-dark">Lorem ipsum</div>
-                                    <div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+                                    <div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit
+                                        et.</div>
                                     <div class="text-muted small mt-1">6h ago</div>
                                 </div>
                             </div>
@@ -138,16 +147,30 @@
                 </div>
             </li>
             <li class="nav-item dropdown ms-lg-2">
-                <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown" data-bs-toggle="dropdown">
+                <a class="nav-link dropdown-toggle position-relative" href="#" id="userDropdown"
+                    data-bs-toggle="dropdown">
                     <i class="align-middle fas fa-cog"></i>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-user"></i> View Profile</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-comments"></i> Contacts</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-chart-pie"></i> Analytics</a>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-cogs"></i> Settings</a>
+                    <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-user"></i> View
+                        Profile</a>
+                    <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-comments"></i>
+                        Contacts</a>
+                    <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-chart-pie"></i>
+                        Analytics</a>
+                    <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-cogs"></i>
+                        Settings</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><i class="align-middle me-1 fas fa-fw fa-arrow-alt-circle-right"></i> Sign out</a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class="align-middle me-1 fas fa-fw fa-arrow-alt-circle-right"></i> Sign out
+                    </a>
+
                 </div>
             </li>
         </ul>

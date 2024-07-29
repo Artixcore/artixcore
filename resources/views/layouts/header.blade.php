@@ -452,25 +452,48 @@
             <ul class="nav align-items-center dropdown-hover ms-sm-2">
 
                 <!-- Sign up button -->
-                <li class="nav-item me-2 d-none d-sm-block">
-                    <a href="{{ route('login') }}" class="btn btn-sm btn-light mb-0"><i
-                            class="bi bi-person-circle me-1"></i>Login</a>
-                </li>
+                @guest
+                    <!-- Show login link if the user is not authenticated -->
+                    <li class="nav-item me-2 d-none d-sm-block">
+                        <a href="{{ route('login') }}" class="btn btn-sm btn-light mb-0">
+                            <i class="bi bi-person-circle me-1"></i>Login
+                        </a>
+                    </li>
+                @endguest
 
-                <li class="nav-item d-none d-sm-block">
-                </li>
-                <li class="nav-item d-none d-sm-block">
-                    @auth
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
+                @auth
+                    <ul>
+                        @if (auth()->user()->hasRole('admin'))
+                            <li class="nav-item me-2 d-none d-sm-block"><a class="btn btn-sm btn-light mb-0"
+                                    href="{{ route('admin') }}">Admin Dashboard</a></li>
+                        @endif
 
-                        <a href="{{ route('logout') }}"
+                        @if (auth()->user()->hasRole('superadmin'))
+                            <li class="nav-item me-2 d-none d-sm-block"><a class="btn btn-sm btn-light mb-0"
+                                    href="{{ route('superadmin') }}">Super Admin Dashboard</a></li>
+                        @endif
+
+                        @if (auth()->user()->hasRole('seo'))
+                            <li class="nav-item me-2 d-none d-sm-block"><a class="btn btn-sm btn-light mb-0"
+                                    href="{{ route('seo') }}">SEO Dashboard</a></li>
+                        @endif
+
+                        @if (auth()->user()->hasRole('article_writer'))
+                            <li class="nav-item me-2 d-none d-sm-block"><a class="btn btn-sm btn-light mb-0"
+                                    href="{{ route('article_writer') }}">Article Writer Dashboard</a></li>
+                        @endif
+                    </ul>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                    <li class="nav-item me-2 d-none d-sm-block">
+                        <a class="btn btn-sm btn-light mb-0" href="{{ route('logout') }}"
                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             Logout
                         </a>
-                    @endauth
-                </li>
+                    </li>
+                @endauth
 
                 <!-- Responsive navbar toggler -->
                 <li class="nav-item">

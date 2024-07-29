@@ -50,6 +50,23 @@ class LoginController extends Controller
         return redirect()->route('/home'); // Default redirection
     }
 
+    public function logout(Request $request)
+    {
+        $user = $request->user();
+
+        if ($user && $user->currentAccessToken()) {
+            // Revoke the current user's token
+            $user->currentAccessToken()->delete();
+        }
+
+        // Optionally, you can invalidate the session and regenerate the token
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/');
+
+    }
+
     public function __construct()
     {
         $this->middleware('guest')->except('logout');

@@ -1,9 +1,9 @@
 <nav id="sidebar" class="sidebar">
     <a class="sidebar-brand text-center">
 
-      <img src="{{asset('logo.png')}}" alt="" srcset="">
-      <br>
-      Artixcore
+        <img src="{{ asset('logo.png') }}" alt="" srcset="">
+        <br>
+        Artixcore
     </a>
     <div class="sidebar-content">
 
@@ -13,7 +13,7 @@
             </li>
             {{-- <li class="sidebar-item active"> --}}
             <li class="sidebar-item">
-                <a class="sidebar-link" href="{{route('dashboard')}}">
+                <a class="sidebar-link" href="{{ route('dashboard') }}">
                     <i class="align-middle me-2 fas fa-fw fa-home"></i> <span class="align-middle">Dashboards</span>
                 </a>
             </li>
@@ -61,7 +61,7 @@
                     <i class="align-middle me-2 fas fa-fw fa-flask"></i> <span class="align-middle">Pages</span>
                 </a>
                 <ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class="sidebar-link" href="{{route('pages.hero')}}">Hero Page</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{ route('pages.hero') }}">Hero Page</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Home Page</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Header Menu</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Footer Menu</a></li>
@@ -70,9 +70,25 @@
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Footer Info</a></li>
                 </ul>
             </li>
+
+            <li class="sidebar-item">
+                <a data-bs-target="#icons" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                    <i class="align-middle me-2 fas fa-fw fa-heart"></i> <span class="align-middle">Articles</span>
+                </a>
+                <ul id="icons" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+                    <li class="sidebar-item"><a class='sidebar-link' href='icons-feather.html'>Feather</a>
+                    </li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='icons-ion.html'>Ion
+                            Icons</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='icons-font-awesome.html'>Font
+                            Awesome</a></li>
+                </ul>
+            </li>
+
             <li class="sidebar-item">
                 <a data-bs-target="#charts" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                    <i class="align-middle me-2 fas fa-fw fa-chart-pie"></i> <span class="align-middle">Analytics</span>
+                    <i class="align-middle me-2 fas fa-fw fa-chart-pie"></i> <span
+                        class="align-middle">Analytics</span>
                 </a>
                 <ul id="charts" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item"><a class='sidebar-link' href='charts-chartjs.html'>Chart.js</a>
@@ -106,12 +122,14 @@
             </li>
             <li class="sidebar-item">
                 <a class='sidebar-link' href='tables-bootstrap.html'>
-                    <i class="align-middle me-2 fas fa-fw fa-list"></i> <span class="align-middle">User Management</span>
+                    <i class="align-middle me-2 fas fa-fw fa-list"></i> <span class="align-middle">User
+                        Management</span>
                 </a>
             </li>
             <li class="sidebar-item">
                 <a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                    <i class="align-middle me-2 fas fa-fw fa-table"></i> <span class="align-middle">API, Social and SEO</span>
+                    <i class="align-middle me-2 fas fa-fw fa-table"></i> <span class="align-middle">API, Social and
+                        SEO</span>
                 </a>
                 <ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item"><a class='sidebar-link'
@@ -126,19 +144,6 @@
                             Selection</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='tables-datatables-ajax.html'>Ajax
                             Sourced Data</a></li>
-                </ul>
-            </li>
-            <li class="sidebar-item">
-                <a data-bs-target="#icons" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                    <i class="align-middle me-2 fas fa-fw fa-heart"></i> <span class="align-middle">Articles</span>
-                </a>
-                <ul id="icons" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class='sidebar-link' href='icons-feather.html'>Feather</a>
-                    </li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='icons-ion.html'>Ion
-                            Icons</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='icons-font-awesome.html'>Font
-                            Awesome</a></li>
                 </ul>
             </li>
 

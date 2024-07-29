@@ -5,7 +5,7 @@
 
             <div class="header">
                 <h1 class="header-title">
-                    Welcome back, Linda!
+                    Welcome back, SEO Admin!
                 </h1>
                 <p class="header-subtitle">You have 24 new messages and 5 new notifications.</p>
             </div>
