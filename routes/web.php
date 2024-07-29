@@ -2,9 +2,17 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\Superadmin\SuperadminDashboardController;
+use App\Http\Controllers\Admin\AdminDashboardController;
+use App\Http\Controllers\SEO\SEODashboardController;
+use App\Http\Controllers\Writer\WriterDashboardController;
+
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\HeroController;
 use App\Http\Controllers\Backend\DashboardController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +49,19 @@ Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashb
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::group(['middleware' => ['role:admin']], function () {
+    Route::get('/admin', [AdminDashboardController::class, 'index'])->name('admin');
+});
+
+Route::group(['middleware' => ['role:superadmin']], function () {
+    Route::get('/superadmin', [SuperadminDashboardController::class, 'index'])->name('superadmin');;
+});
+
+Route::group(['middleware' => ['role:seo']], function () {
+    Route::get('/seo', [SEODashboardController::class, 'index'])->name('seo');;
+});
+
+Route::group(['middleware' => ['role:article_writer']], function () {
+    Route::get('/article-writer', [WriterDashboardController::class, 'index'])->name('article-writer');;
+});

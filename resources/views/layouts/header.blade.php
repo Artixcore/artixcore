@@ -458,7 +458,18 @@
                 </li>
 
                 <li class="nav-item d-none d-sm-block">
-                    <a href="{{ url('contact') }}" class="btn btn-sm btn-primary mb-0">Contact</a>
+                </li>
+                <li class="nav-item d-none d-sm-block">
+                    @auth
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+
+                        <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+                    @endauth
                 </li>
 
                 <!-- Responsive navbar toggler -->
