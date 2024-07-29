@@ -13,7 +13,7 @@
             </li>
             {{-- <li class="sidebar-item active"> --}}
             <li class="sidebar-item">
-                <a class="sidebar-link" href="{{ route('dashboard') }}">
+                <a class="sidebar-link" href="{{ route('admin') }}">
                     <i class="align-middle me-2 fas fa-fw fa-home"></i> <span class="align-middle">Dashboards</span>
                 </a>
             </li>
@@ -76,12 +76,12 @@
                     <i class="align-middle me-2 fas fa-fw fa-heart"></i> <span class="align-middle">Articles</span>
                 </a>
                 <ul id="icons" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class='sidebar-link' href='icons-feather.html'>Feather</a>
-                    </li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='icons-ion.html'>Ion
-                            Icons</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='icons-font-awesome.html'>Font
-                            Awesome</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="">New Article</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href="{{route('admin.article-list')}}">Article List</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='icons-feather.html'>Hero Article</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='icons-feather.html'>Service Article</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='icons-feather.html'>Products Article</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='icons-feather.html'>Page Article</a></li>
                 </ul>
             </li>
 
