@@ -20,6 +20,7 @@ use App\Http\Controllers\Backend\HeroController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\ImageUploadController;
 
+use App\Http\Controllers\Article\ArticleController;
 
 
 /*
@@ -64,11 +65,17 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
+Route::middleware('auth')->group(function () {
+    Route::post('/articlestore', [ArticleController::class, 'articlestore'])->name('articlestore');
+    Route::post('/articleupdate', [ArticleController::class, 'articleupdate'])->name('articleupdate');
+    Route::delete('/articledestroy/{id}', [ArticleController::class, 'articledestroy'])->name('articledestroy');
+});
+
 Route::group(['middleware' => ['role:admin']], function () {
     Route::get('/admin', [AdminDashboardController::class, 'index'])->name('admin');
-
     Route::get('/admin/article-list', [AdminArticleController::class, 'index'])->name('admin.article-list');
     Route::get('/admin/article-new', [AdminArticleController::class, 'new'])->name('admin.article-new');
+    Route::get('articles/show/{id}', [AdminArticleController::class, 'show'])->name('articles.show');
 });
 
 Route::group(['middleware' => ['role:superadmin']], function () {

@@ -15,8 +15,12 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="{{ asset('css/modern.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/modern.css') }}">
 
     @yield('style_css')
 
@@ -39,14 +43,36 @@
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
     @yield('footer_js')
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			// Datatables Responsive
-			$("#datatables-reponsive").DataTable({
-				responsive: true
-			});
-		});
-	</script>
+    <script>
+        $(document).ready(function() {
+            // Check if DataTable is already initialized
+            if (!$.fn.DataTable.isDataTable('#datatables-reponsive')) {
+                $('#datatables-reponsive').DataTable({
+                    responsive: true
+                });
+            }
+
+            // SweetAlert confirmation for delete
+            $('.delete-form').on('submit', function(e) {
+                e.preventDefault();
+                const form = $(this);
+                Swal.fire({
+                    title: 'Are you sure?',
+                    text: 'You won\'t be able to revert this!',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Yes, delete it!',
+                    cancelButtonText: 'Cancel'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        form.off('submit').submit(); // Proceed with form submission
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

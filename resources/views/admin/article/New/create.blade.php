@@ -10,53 +10,64 @@
                             <h3>Write New Article</h3>
                         </div>
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label class="form-label">Article Title</label>
-                                        <input type="text" class="form-control">
+                            <form action="{{route('articlestore')}}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                <div class="row">
+
+                                    <div class="col-md-8">
+                                        <div class="mb-3">
+                                            <label class="form-label">Article Title</label>
+                                            <input type="text" name="title" class="form-control">
+                                        </div>
                                     </div>
+
+                                    <div class="col-md-4">
+                                        <div class="mb-3">
+                                            <label class="form-label">Article Primary Image</label>
+                                            <input type="file" name="primary_image" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Subject</label>
+                                            <input type="text" name="subject" class="form-control">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Image</label>
+                                            <input type="file" name="image" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-xl-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Type</label>
+                                            <input type="text" name="article_type" class="form-control">
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <label class="form-label">Video</label>
+                                            <input type="file" name="video" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Short Desc</label>
+                                            <textarea name="short_desc" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <button type="submit" style="float: right;"
+                                                class="btn btn-outline-success">Publish</button>
+                                        </div>
+                                    </div>
+
                                 </div>
-
-                                <div class="col-12 col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Subject</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label class="form-label">Image</label>
-                                        <input type="file" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-xl-6">
-                                    <div class="mb-3">
-                                        <label class="form-label">Type</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <label class="form-label">Video</label>
-                                        <input type="file" class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <label class="form-label">Short Desc</label>
-                                        <textarea name="" class="form-control"></textarea>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-12">
-                                    <div class="mb-3">
-                                        <button type="submit" style="float: right;"
-                                            class="btn btn-outline-success">Publish</button>
-                                    </div>
-                                </div>
-
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -84,7 +95,8 @@
 
                                 <div class="mb-3">
 
-                                    <input type="title" class="form-control" placeholder="Meta Keywords (Use ',' example: Post, Tree)">
+                                    <input type="title" class="form-control"
+                                        placeholder="Meta Keywords (Use ',' example: Post, Tree)">
                                 </div>
 
                                 <div class="mb-3">
