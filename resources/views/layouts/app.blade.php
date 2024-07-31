@@ -27,6 +27,8 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}">
 
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
     {{-- <link rel="stylesheet" href="{{ asset('assets/vendor/font-awesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/vendor/autocomplete/dist/css/autocomplete.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">

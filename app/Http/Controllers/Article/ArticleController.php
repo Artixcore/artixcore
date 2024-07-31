@@ -179,6 +179,15 @@ class ArticleController extends Controller
         return back()->with('success', 'Article updated successfully.');
     }
 
+    public function updatepage(Request $request, $id)
+    {
+        $article = Article::findOrFail($id);
+        $article->page_article = $request->page_article;
+        $article->save();
+
+        return redirect()->back()->with('success', 'Article updated successfully.');
+    }
+
     public function articledestroy($id)
     {
         // Find the article or fail

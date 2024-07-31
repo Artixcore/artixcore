@@ -69,6 +69,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/articlestore', [ArticleController::class, 'articlestore'])->name('articlestore');
     Route::post('/articleupdate', [ArticleController::class, 'articleupdate'])->name('articleupdate');
     Route::delete('/articledestroy/{id}', [ArticleController::class, 'articledestroy'])->name('articledestroy');
+    Route::post('/updatepage/{id}', [ArticleController::class, 'updatepage'])->name('updatepage');
 });
 
 Route::group(['middleware' => ['role:admin']], function () {

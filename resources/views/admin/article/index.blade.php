@@ -14,13 +14,11 @@
                             <tr>
                                 <th>Number</th>
                                 <th>Title</th>
-                                <th>Content Type</th>
-                                <th>Primary Image</th>
+                                <th>Page</th>
                                 <th>Article Image</th>
                                 <th>Article Video</th>
                                 <th>Author</th>
                                 <th>Subject</th>
-
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -29,22 +27,16 @@
                                 <tr>
                                     <td>{{ $content->number }}</td>
                                     <td>{{ $content->title }}</td>
-                                    <td>{{ $content->article_type }}</td>
+                                    <td>{{ $content->page_article }}</td>
                                     <td>
-                                        @if ($content->primary_image)
-                                            <img src="{{ asset('storage/' . $content->primary_image) }}" alt="Primary Image"
-                                                width="50">
-                                        @endif
-                                    </td>
-                                    <td>
-                                        @if ($content->image)
+                                        @if ($content->article_image)
                                             <span style="color: green;">1</span>
                                         @else
                                             <span style="color: red;">0</span>
                                         @endif
                                     </td>
                                     <td>
-                                        @if ($content->video)
+                                        @if ($content->article_video)
                                             <span style="color: green;">1</span>
                                         @else
                                             <span style="color: red;">0</span>
@@ -54,15 +46,18 @@
                                     <td>{{ $content->subject }}</td>
 
                                     <td>
-                                        <a href="{{route('articles.show',  $content->id)}}" class="btn btn-outline-success">View</a>
-                                        {{-- <a href="{{ route('contents.edit', $content->id) }}"
-                                            class="btn btn-secondary">Edit</a> --}}
-                                        <form action="{{ route('articledestroy', $content->id) }}" class="delete-form"
-                                            method="POST" style="display:inline-block;">
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-outline-danger">Delete</button>
-                                        </form>
+                                        <div class="btn-group" role="group">
+                                            <a href="{{ route('articles.show', $content->id) }}"
+                                                class="btn btn-outline-success"><i class="fa fa-eye" aria-hidden="true"></i>
+                                            </a>
+                                            <form action="{{ route('articledestroy', $content->id) }}" class="delete-form"
+                                                method="POST" style="display:inline-block;">
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-outline-danger"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></button>
+                                            </form>
+                                        </div>
                                     </td>
                                 </tr>
                             @endforeach

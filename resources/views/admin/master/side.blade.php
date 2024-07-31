@@ -2,8 +2,7 @@
     <a class="sidebar-brand text-center">
 
         <img src="{{ asset('logo.png') }}" alt="" srcset="">
-        <br>
-        Artixcore
+
     </a>
     <div class="sidebar-content">
 
