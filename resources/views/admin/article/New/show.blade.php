@@ -17,29 +17,22 @@
 
                                 <!-- Primary Image -->
                                 <div class="col-md-4">
-                                    <div>
-                                        <strong>Primary Image:</strong>
-                                        <br>
-                                        @if ($article->primary_image)
-                                            <img src="{{ asset('storage/' . $article->primary_image) }}" alt="Primary Image"
-                                                width="200">
-                                        @else
-                                            <span style="color: red;">No image</span>
-                                        @endif
-                                    </div>
+                                    @if ($article->primary_image)
+                                        <img src="{{ asset('storage/' . $article->primary_image) }}" alt="Primary Image"
+                                            style="width: 100%;">
+                                    @else
+                                        <span style="color: red;">No Primary image</span>
+                                    @endif
                                 </div>
 
                                 <!-- Article Image -->
                                 <div class="col-md-4">
-
-                                    <br>
                                     @if ($article->article_image)
                                         <img src="{{ asset('storage/' . $article->article_image) }}" alt="Article Image"
                                             style="width: 100%;">
                                     @else
                                         <span style="color: red;">No Article image</span>
                                     @endif
-
                                 </div>
 
                                 <!-- Article Video -->
@@ -109,28 +102,25 @@
                         </div>
 
                         <div class="card-body">
-                            <form>
-
+                            <form action="{{ route('metastore') }}" method="POST">
+                                @csrf
                                 <div class="mb-3">
-
-                                    <input type="text" class="form-control" placeholder="Meta Title">
+                                    <input type="text" class="form-control" name="meta_title" placeholder="Meta Title">
+                                    <input type="hidden" class="form-control" name="article" value="{{ $article->number }}">
                                 </div>
 
                                 <div class="mb-3">
-
-                                    <input type="title" class="form-control" placeholder="Meta Author"
+                                    <input type="title" class="form-control" name="meta_author" placeholder="Meta Author"
                                         value="{{ Auth::user()->name }}">
                                 </div>
 
                                 <div class="mb-3">
-
-                                    <input type="title" class="form-control"
+                                    <input type="title" class="form-control" name="meta_keywords"
                                         placeholder="Meta Keywords (Use ',' example: Post, Tree)">
                                 </div>
 
                                 <div class="mb-3">
-
-                                    <textarea class="form-control" placeholder="Meta Description"></textarea>
+                                    <textarea class="form-control" name="meta_desc" placeholder="Meta Description"></textarea>
                                 </div>
 
                                 <div class="mb-3">
@@ -145,6 +135,5 @@
                 </div>
             </div>
         </div>
-
     </main>
 @endsection

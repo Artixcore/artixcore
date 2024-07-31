@@ -21,6 +21,7 @@ use App\Http\Controllers\Backend\DashboardController;
 use App\Http\Controllers\ImageUploadController;
 
 use App\Http\Controllers\Article\ArticleController;
+use App\Http\Controllers\MetaController;
 
 
 /*
@@ -64,6 +65,13 @@ Route::post('/upload-image', [ImageUploadController::class, 'uploadImage'])->nam
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+// Meta
+Route::post('metastore', [MetaController::class, 'metastore'])->name('metastore');
+Route::post('metaupdate', [MetaController::class, 'metaupdate'])->name('metaupdate');
+Route::delete('metaudestroy/{id}', [MetaController::class, 'metaudestroy'])->name('metaudestroy');
+
+
 
 Route::middleware('auth')->group(function () {
     Route::post('/articlestore', [ArticleController::class, 'articlestore'])->name('articlestore');

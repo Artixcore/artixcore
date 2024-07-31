@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('article')->nullable();
             $table->string('case_study')->nullable();
             $table->string('meta_title')->nullable();
+            $table->string('meta_author')->nullable();
             $table->string('meta_desc')->nullable();
             $table->string('meta_keywords')->nullable();
             $table->string('scripts')->nullable();
