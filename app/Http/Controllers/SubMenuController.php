@@ -1,0 +1,75 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\Sub_Menu;
+use App\Models\Menu;
+use Illuminate\Http\Request;
+
+class SubMenuController extends Controller
+{
+    public function index()
+    {
+        $subMenus = Sub_Menu::all();
+        return view('sub_menus.index', compact('subMenus'));
+    }
+
+    public function create()
+    {
+        $menus = Menu::all();
+        return view('sub_menus.create', compact('menus'));
+    }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'menu_id' => 'required',
+            'submenu' => 'required',
+            'submenu_link' => 'required',
+            'submenu_image' => 'required|image'
+        ]);
+
+        $subMenu = new Sub_Menu($request->all());
+        if ($request->hasFile('submenu_image')) {
+            $subMenu->submenu_image = $request->file('submenu_image')->store('submenu_images');
+        }
+        $subMenu->save();
+
+        return redirect()->route('sub_menus.index');
+    }
+
+    public function show(Sub_Menu $subMenu)
+    {
+        return view('sub_menus.show', compact('subMenu'));
+    }
+
+    public function edit(Sub_Menu $subMenu)
+    {
+        $menus = Menu::all();
+        return view('sub_menus.edit', compact('subMenu', 'menus'));
+    }
+
+    public function update(Request $request, Sub_Menu $subMenu)
+    {
+        $request->validate([
+            'menu_id' => 'required',
+            'submenu' => 'required',
+            'submenu_link' => 'required',
+            'submenu_image' => 'image'
+        ]);
+
+        $subMenu->fill($request->all());
+        if ($request->hasFile('submenu_image')) {
+            $subMenu->submenu_image = $request->file('submenu_image')->store('submenu_images');
+        }
+        $subMenu->save();
+
+        return redirect()->route('sub_menus.index');
+    }
+
+    public function destroy(Sub_Menu $subMenu)
+    {
+        $subMenu->delete();
+        return redirect()->route('sub_menus.index');
+    }
+}

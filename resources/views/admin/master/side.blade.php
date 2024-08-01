@@ -83,6 +83,27 @@
             </li>
 
             <li class="sidebar-item">
+                <a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
+                    <i class="align-middle me-2 fas fa-fw fa-table"></i> <span class="align-middle">API, Social and
+                        SEO</span>
+                </a>
+                <ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+                    <li class="sidebar-item"><a class="sidebar-link"
+                            href="{{route('metas.index')}}">Meta List</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='tables-datatables-buttons.html'>Table with
+                            Buttons</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link'
+                            href='tables-datatables-column-search.html'>Column Search</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='tables-datatables-fixed-header.html'>Fixed
+                            Header</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='tables-datatables-multi.html'>Multi
+                            Selection</a></li>
+                    <li class="sidebar-item"><a class='sidebar-link' href='tables-datatables-ajax.html'>Ajax
+                            Sourced Data</a></li>
+                </ul>
+            </li>
+
+            <li class="sidebar-item">
                 <a data-bs-target="#charts" data-bs-toggle="collapse" class="sidebar-link collapsed">
                     <i class="align-middle me-2 fas fa-fw fa-chart-pie"></i> <span
                         class="align-middle">Analytics</span>
@@ -122,26 +143,6 @@
                     <i class="align-middle me-2 fas fa-fw fa-list"></i> <span class="align-middle">User
                         Management</span>
                 </a>
-            </li>
-            <li class="sidebar-item">
-                <a data-bs-target="#datatables" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                    <i class="align-middle me-2 fas fa-fw fa-table"></i> <span class="align-middle">API, Social and
-                        SEO</span>
-                </a>
-                <ul id="datatables" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class='sidebar-link'
-                            href='tables-datatables-responsive.html'>Responsive Table</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='tables-datatables-buttons.html'>Table with
-                            Buttons</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link'
-                            href='tables-datatables-column-search.html'>Column Search</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='tables-datatables-fixed-header.html'>Fixed
-                            Header</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='tables-datatables-multi.html'>Multi
-                            Selection</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='tables-datatables-ajax.html'>Ajax
-                            Sourced Data</a></li>
-                </ul>
             </li>
 
             <li class="sidebar-item">

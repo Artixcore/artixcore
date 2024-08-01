@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class AdminArticleController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index(){
         $articles = Article::with('author', 'primaryImage', 'image', 'video')->get();
         return view('admin.article.index', compact('articles'));

@@ -23,6 +23,9 @@ use App\Http\Controllers\ImageUploadController;
 use App\Http\Controllers\Article\ArticleController;
 use App\Http\Controllers\MetaController;
 
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\SubMenuController;
+use App\Http\Controllers\SubSubMenuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,9 +70,13 @@ Auth::routes();
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Meta
-Route::post('metastore', [MetaController::class, 'metastore'])->name('metastore');
-Route::post('metaupdate', [MetaController::class, 'metaupdate'])->name('metaupdate');
-Route::delete('metaudestroy/{id}', [MetaController::class, 'metaudestroy'])->name('metaudestroy');
+
+Route::resource('metas', MetaController::class);
+
+
+Route::resource('menus', MenuController::class);
+Route::resource('sub_menus', SubMenuController::class);
+Route::resource('sub_sub_menus', SubSubMenuController::class);
 
 
 

@@ -7,8 +7,23 @@ use Illuminate\Http\Request;
 
 class MetaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
 
-    public function metastore(Request $request)
+    public function index()
+    {
+        $metas = Meta::all();
+        return view('Meta.Meta.index', compact('metas'));
+    }
+
+    public function create()
+    {
+        return view('Meta.Meta.create');
+    }
+
+    public function store(Request $request)
     {
         $request->validate([
             'page' => 'nullable|string',
@@ -39,8 +54,12 @@ class MetaController extends Controller
         return redirect()->back()->with('success', 'Meta created successfully.');
     }
 
+    public function edit(Meta $meta)
+    {
+        return view('Meta.Meta.edit', compact('meta'));
+    }
 
-    public function metaupdate(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'page' => 'nullable|string',
@@ -70,7 +89,7 @@ class MetaController extends Controller
         return redirect()->back()->with('success', 'Meta updated successfully.');
     }
 
-    public function metadestroy($id)
+    public function destroy($id)
     {
         $meta = Meta::find($id);
         $meta->delete();

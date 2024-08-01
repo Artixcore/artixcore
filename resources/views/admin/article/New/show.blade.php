@@ -102,7 +102,7 @@
                         </div>
 
                         <div class="card-body">
-                            <form action="{{ route('metastore') }}" method="POST">
+                            <form action="{{ route('metas.create') }}" method="POST">
                                 @csrf
                                 <div class="mb-3">
                                     <input type="text" class="form-control" name="meta_title" placeholder="Meta Title">
