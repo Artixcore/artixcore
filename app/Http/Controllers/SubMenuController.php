@@ -12,7 +12,7 @@ class SubMenuController extends Controller
     public function index()
     {
         $subMenus = Sub_Menu::all();
-        return view('sub_menus.index', compact('subMenus'));
+        return view('menus.sub_menus.index', compact('subMenus'));
     }
 
     public function create()
@@ -23,14 +23,6 @@ class SubMenuController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'user_id' => 'required',
-            'menu_id' => 'required',
-            'submenu' => 'required',
-            'submenu_link' => 'required',
-            'submenu_image' => 'required|image'
-        ]);
-
 
         $menu = new Sub_Menu();
         $menu->user_id = Auth::user()->id;

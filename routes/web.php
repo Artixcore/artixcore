@@ -26,6 +26,7 @@ use App\Http\Controllers\MetaController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\SubMenuController;
 use App\Http\Controllers\SubSubMenuController;
+use App\Http\Controllers\Service\ServiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,13 +68,17 @@ Route::post('/upload-image', [ImageUploadController::class, 'uploadImage'])->nam
 
 Auth::routes();
 
+//Services
+Route::resource('services', ServiceController::class);
+
+
+
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // Meta
-
 Route::resource('metas', MetaController::class);
 
-
+//Menu
 Route::resource('menus', MenuController::class);
 Route::resource('sub_menus', SubMenuController::class);
 Route::resource('sub_sub_menus', SubSubMenuController::class);

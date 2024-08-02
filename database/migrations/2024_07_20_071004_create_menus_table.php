@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('user_id');
             $table->string('menu');
+            $table->string('menu_type')->default('header');
             $table->string('menu_link');
             $table->string('menu_image');
             $table->string('status');

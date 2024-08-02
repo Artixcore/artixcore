@@ -25,6 +25,7 @@ class MenuController extends Controller
         $request->validate([
             'menu' => 'required',
             'menu_link' => 'required',
+            'menu_type' => 'required',
             'menu_image' => 'required|image',
             'status' => 'required'
         ]);
@@ -32,6 +33,7 @@ class MenuController extends Controller
         $menu = new Menu();
         $menu->user_id = Auth::user()->id;
         $menu->menu = $request->menu;
+        $menu->menu_type = $request->menu_type;
         $menu->menu_link = $request->menu_link;
         $menu->status = $request->status;
         if ($request->hasFile('menu_image')) {
@@ -60,12 +62,14 @@ class MenuController extends Controller
         $request->validate([
             'menu' => 'required',
             'menu_link' => 'required',
+            'menu_type' => 'required',
             'menu_image' => 'image',
             'status' => 'required'
         ]);
 
         $menu->user_id = Auth::user()->id;
         $menu->menu = $request->menu;
+        $menu->menu_type = $request->menu_type;
         $menu->menu_link = $request->menu_link;
         $menu->status = $request->status;
         if ($request->hasFile('menu_image')) {
