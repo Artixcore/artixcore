@@ -62,7 +62,7 @@
                 <ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item"><a class="sidebar-link" href="{{ route('pages.hero') }}">Hero Page</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Home Page</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Header Menu</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{route('menus.index')}}">Header Menu</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Footer Menu</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Services</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='ui-alerts.html'>Header Info</a></li>

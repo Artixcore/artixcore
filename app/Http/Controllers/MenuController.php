@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
+use App\Models\Sub_Menu;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class MenuController extends Controller
 {
@@ -27,10 +29,16 @@ class MenuController extends Controller
             'status' => 'required'
         ]);
 
-        $menu = new Menu($request->all());
+        $menu = new Menu();
+        $menu->user_id = Auth::user()->id;
+        $menu->menu = $request->menu;
+        $menu->menu_link = $request->menu_link;
+        $menu->status = $request->status;
         if ($request->hasFile('menu_image')) {
-            $menu->menu_image = $request->file('menu_image')->store('menu_images');
+            $originalName = $request->file('menu_image')->getClientOriginalName();
+            $menuimage = $request->file('menu_image')->storeAs('menu_images', $originalName, 'public');
         }
+        $menu->menu_image = $menuimage;
         $menu->save();
 
         return redirect()->route('menus.index');
@@ -38,7 +46,8 @@ class MenuController extends Controller
 
     public function show(Menu $menu)
     {
-        return view('menus.show', compact('menu'));
+        $subMenus = Sub_Menu::where('menu_id', $menu->id)->get();
+        return view('menus.sub_menus.index', compact('menu', 'subMenus'));
     }
 
     public function edit(Menu $menu)
@@ -55,10 +64,15 @@ class MenuController extends Controller
             'status' => 'required'
         ]);
 
-        $menu->fill($request->all());
+        $menu->user_id = Auth::user()->id;
+        $menu->menu = $request->menu;
+        $menu->menu_link = $request->menu_link;
+        $menu->status = $request->status;
         if ($request->hasFile('menu_image')) {
-            $menu->menu_image = $request->file('menu_image')->store('menu_images');
+            $originalName = $request->file('menu_image')->getClientOriginalName();
+            $menuimage = $request->file('menu_image')->storeAs('menu_images', $originalName, 'public');
         }
+        $menu->menu_image = $menuimage;
         $menu->save();
 
         return redirect()->route('menus.index');

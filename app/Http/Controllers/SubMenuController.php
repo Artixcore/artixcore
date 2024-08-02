@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Sub_Menu;
 use App\Models\Menu;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class SubMenuController extends Controller
 {
@@ -17,17 +18,32 @@ class SubMenuController extends Controller
     public function create()
     {
         $menus = Menu::all();
-        return view('sub_menus.create', compact('menus'));
+        return view('menus.sub_menus.create', compact('menus'));
     }
 
     public function store(Request $request)
     {
         $request->validate([
+            'user_id' => 'required',
             'menu_id' => 'required',
             'submenu' => 'required',
             'submenu_link' => 'required',
             'submenu_image' => 'required|image'
         ]);
+
+
+        $menu = new Sub_Menu();
+        $menu->user_id = Auth::user()->id;
+        $menu->menu_id = $request->menu_id;
+        $menu->submenu = $request->submenu;
+        $menu->submenu_link = $request->submenu_link;
+        if ($request->hasFile('submenu_image')) {
+            $originalName = $request->file('submenu_image')->getClientOriginalName();
+            $submenu_image = $request->file('submenu_image')->storeAs('submenu_image', $originalName, 'public');
+        }
+        $menu->submenu_image = $submenu_image;
+        $menu->save();
+
 
         $subMenu = new Sub_Menu($request->all());
         if ($request->hasFile('submenu_image')) {
