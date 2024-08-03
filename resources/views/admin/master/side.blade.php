@@ -36,11 +36,10 @@
             </li>
             <li class="sidebar-item">
                 <a data-bs-target="#auth" data-bs-toggle="collapse" class="sidebar-link collapsed">
-                    <i class="align-middle me-2 fas fa-fw fa-sign-in-alt"></i> <span class="align-middle">Leads</span>
+                    <i class="align-middle me-2 fas fa-fw fa-sign-in-alt"></i> <span class="align-middle">CRM</span>
                 </a>
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-                    <li class="sidebar-item"><a class='sidebar-link' href='pages-sign-in.html'>Sign
-                            In</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{route('clients.index')}}">Clients</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='pages-sign-up.html'>Sign
                             Up</a></li>
                     <li class="sidebar-item"><a class='sidebar-link' href='pages-reset-password.html'>Reset
@@ -55,6 +54,7 @@
             <li class="sidebar-header">
                 Configurations
             </li>
+
             <li class="sidebar-item">
                 <a data-bs-target="#ui" data-bs-toggle="collapse" class="sidebar-link collapsed">
                     <i class="align-middle me-2 fas fa-fw fa-flask"></i> <span class="align-middle">Pages</span>

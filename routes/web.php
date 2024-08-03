@@ -26,7 +26,9 @@ use App\Http\Controllers\MetaController;
 use App\Http\Controllers\MenuController;
 use App\Http\Controllers\SubMenuController;
 use App\Http\Controllers\SubSubMenuController;
+use App\Http\Controllers\Client\ClientController;
 use App\Http\Controllers\Service\ServiceController;
+use App\Http\Controllers\LocationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,12 +56,18 @@ Route::get('/service', function () {
 });
 
 
+Route::get('/countries', [LocationController::class, 'countries']);
+Route::get('/states/{country_id}', [LocationController::class, 'states']);
+Route::get('/cities/{state_id}', [LocationController::class, 'cities']);
 
 Route::get('pages/hero', [HeroController::class, 'index'])->name('pages.hero');
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
+
+
+
 
 
 Route::post('/upload-image', [ImageUploadController::class, 'uploadImage'])->name('upload.image');
@@ -71,6 +79,8 @@ Auth::routes();
 //Services
 Route::resource('services', ServiceController::class);
 
+//Clients
+Route::resource('clients', ClientController::class);
 
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
