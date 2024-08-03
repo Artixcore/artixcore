@@ -1,8 +1,5 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-<script src="{{ asset('js/location.js') }}"></script>
-
-
+<script src="{{ asset('js/app.js') }}"></script>
 @yield('footer_js')
 <script>
     $(document).ready(function() {
@@ -34,4 +31,3 @@
         });
     });
 </script>
-<script src="{{ asset('js/app.js') }}"></script>
