@@ -29,7 +29,7 @@
                                         <a href="{{ route('sub_menus.show', $subMenu->id) }}" class="btn btn-info">View</a>
                                         <a href="{{ route('sub_menus.edit', $subMenu->id) }}"
                                             class="btn btn-warning">Edit</a>
-                                        <form action="{{ route('sub_menus.destroy', $subMenu->id) }}" method="POST"
+                                        <form action="{{ route('sub_menus.destroy', $subMenu->id) }}" method="POST" class="delete-form"
                                             style="display:inline-block;">
                                             @csrf
                                             @method('DELETE')

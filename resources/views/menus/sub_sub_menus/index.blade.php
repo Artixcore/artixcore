@@ -6,42 +6,39 @@
         <div class="container-fluid">
             <div class="card">
                 <div class="card-header">
-                    <h2 style="float: left;">Meta List</h2>
-                    <a href="{{ route('metas.create') }}" class="btn btn-outline-success" style="float: right;">New
-                        Meta</a>
+                    {{ $subMenu->submenu }}
+                    <a href="{{ route('sub_sub_menus.create') }}" class="btn btn-outline-primary" style="float: right;">Create
+                        SubSubMenu</a>
                 </div>
                 <div class="card-body">
                     <table id="datatables-reponsive" class="table" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Number</th>
-                                <th>Page</th>
-                                <th>Product</th>
-                                <th>Blog</th>
-                                <th>Article</th>
-                                <th>Case Study</th>
-                                <th>Meta Title</th>
+                                <th>ID</th>
+                                <th>SubSubMenu</th>
+                                <th>Link</th>
                                 <th>Actions</th>
                             </tr>
                         </thead>
+                        @php
+                            $subSubMenus = App\Models\Sub__subMenu::where('submenu_id', $subMenu->id)->get();
+                        @endphp
                         <tbody>
-                            @foreach ($metas as $meta)
+                            @foreach ($subSubMenus as $subSubMenu)
                                 <tr>
-                                    <td>{{ $meta->number }}</td>
-                                    <td>{{ $meta->page }}</td>
-                                    <td>{{ $meta->product }}</td>
-                                    <td>{{ $meta->blog }}</td>
-                                    <td>{{ $meta->article }}</td>
-                                    <td>{{ $meta->case_study }}</td>
-                                    <td>{{ $meta->meta_title }}</td>
+                                    <td>{{ $subSubMenu->id }}</td>
+                                    <td>{{ $subSubMenu->subsubmenu }}</td>
+                                    <td>{{ $subSubMenu->subsubmenu_link }}</td>
                                     <td>
-                                        <a href="{{ route('metas.edit', $meta->id) }}"
-                                            class="btn btn-outline-warning">Edit</a>
-                                        <form action="{{ route('metas.destroy', $meta->id) }}" method="POST" class="delete-form"
-                                            style="display:inline;">
+                                        <a href="{{ route('sub_sub_menus.show', $subSubMenu->id) }}"
+                                            class="btn btn-info">View</a>
+                                        <a href="{{ route('sub_sub_menus.edit', $subSubMenu->id) }}"
+                                            class="btn btn-warning">Edit</a>
+                                        <form action="{{ route('sub_sub_menus.destroy', $subSubMenu->id) }}" method="POST"
+                                            class="delete-form" style="display:inline-block;">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-outline-danger">Delete</button>
+                                            <button type="submit" class="btn btn-danger">Delete</button>
                                         </form>
                                     </td>
                                 </tr>

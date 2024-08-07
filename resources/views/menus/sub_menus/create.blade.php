@@ -26,10 +26,10 @@
                                 <label for="submenu_link" class="form-label">SubMenu Link</label>
                                 <input type="text" class="form-control" id="submenu_link" name="submenu_link" required>
                             </div>
-                            <div class="mb-3">
+                            {{-- <div class="mb-3">
                                 <label for="submenu_image" class="form-label">SubMenu Image</label>
                                 <input type="file" class="form-control" name="submenu_image">
-                            </div>
+                            </div> --}}
                             <button type="submit" class="btn btn-primary">Create SubMenu</button>
                         </form>
                     </div>

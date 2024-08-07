@@ -19,7 +19,8 @@ class ArticleController extends Controller
     public function articlestore(Request $request)
     {
         $content = new Article();
-        $content->number = "A" . uniqid();
+        // $content->number = $request->title . uniqid();
+        $content->number = str_replace(' ', '-', $request->title) . uniqid();
         $content->title = $request->title;
         $content->article_type = $request->article_type;
         $content->author_id = Auth::user()->id;

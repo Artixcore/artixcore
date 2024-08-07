@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('menu_id');
             $table->string('submenu');
             $table->string('submenu_link');
-            $table->string('submenu_image');
+            $table->string('submenu_image')->nullable();
             $table->timestamps();
         });
     }

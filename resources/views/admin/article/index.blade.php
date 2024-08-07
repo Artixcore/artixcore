@@ -12,7 +12,7 @@
                     <table id="datatables-reponsive" class="table" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Number</th>
+                                <th>SL</th>
                                 <th>Title</th>
                                 <th>Page</th>
                                 <th>Article Image</th>
@@ -25,7 +25,7 @@
                         <tbody>
                             @foreach ($articles as $content)
                                 <tr>
-                                    <td>{{ $content->number }}</td>
+                                    <td>{{ $content->id }}</td>
                                     <td>{{ $content->title }}</td>
                                     <td>{{ $content->page_article }}</td>
                                     <td>
