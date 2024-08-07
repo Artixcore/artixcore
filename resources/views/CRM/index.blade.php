@@ -42,7 +42,7 @@
                                         <a href="{{ route('clients.show', $client->id) }}"
                                             class="btn btn-outline-warning">Edit</a>
                                         <form action="{{ route('clients.destroy', $client->id) }}"
-                                            method="POST"class="delete-form" style="display:inline-block;">
+                                            method="POST" class="delete-form" style="display:inline-block;">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-outline-danger"><i class="fa fa-trash"

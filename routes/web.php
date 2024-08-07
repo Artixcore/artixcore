@@ -28,7 +28,7 @@ use App\Http\Controllers\SubMenuController;
 use App\Http\Controllers\SubSubMenuController;
 use App\Http\Controllers\Client\ClientController;
 use App\Http\Controllers\Service\ServiceController;
-use App\Http\Controllers\LocationController;
+use App\Http\Controllers\Project\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,10 +55,7 @@ Route::get('/service', function () {
     return view('frontend.service');
 });
 
-
-Route::get('/countries', [LocationController::class, 'countries']);
-Route::get('/states/{country_id}', [LocationController::class, 'states']);
-Route::get('/cities/{state_id}', [LocationController::class, 'cities']);
+Route::resource('projects', ProjectController::class);
 
 Route::get('pages/hero', [HeroController::class, 'index'])->name('pages.hero');
 
