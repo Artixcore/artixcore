@@ -6,7 +6,8 @@
                 @csrf
                 <div class="card">
                     <div class="card-header">
-                        <h1>Create Clients</h1>
+                        <h1 style="float: left;">Create Clients</h1>
+                        <a href="#"" class="btn btn-outline-primary" style="float: right;"data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create Company</a>
                     </div>
                     <div class="card-body">
                         <div class="row">
@@ -96,4 +97,24 @@
         </div>
         </div>
     </main>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Company</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body m-3">
+                    <p class="mb-0">Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes,
+                        user
+                        notifications, or completely custom content.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-outline-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
