@@ -13,8 +13,6 @@ use App\Http\Controllers\Admin\AdminArticleController;
 use App\Http\Controllers\SEO\SEODashboardController;
 use App\Http\Controllers\Writer\WriterDashboardController;
 
-use App\Http\Controllers\Frontend\IndexPageController;
-
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\HeroController;
 use App\Http\Controllers\Backend\DashboardController;
@@ -29,6 +27,7 @@ use App\Http\Controllers\SubSubMenuController;
 use App\Http\Controllers\Client\ClientController;
 use App\Http\Controllers\Service\ServiceController;
 use App\Http\Controllers\Project\ProjectController;
+use App\Http\Controllers\Frontend\IndexPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,9 +42,10 @@ use App\Http\Controllers\Project\ProjectController;
 
 // Route::get('/', [IndexPageController::class, 'index'])->name('/');
 
-Route::get('/', function () {
-    return view('frontend.welcome');
-});
+// Route::get('/', function () {
+//     return view('frontend.welcome');
+// });
+Route::get('/', [IndexPageController::class, 'index']);
 
 Route::get('/contact', function () {
     return view('frontend.contact');

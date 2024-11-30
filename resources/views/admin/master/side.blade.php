@@ -1,7 +1,7 @@
 <nav id="sidebar" class="sidebar">
     <a class="sidebar-brand text-center">
 
-        <img src="{{ asset('logo.png') }}" alt="" srcset="">
+        <img src="{{ asset('logo.png') }}" style="height: 50%; width:50%;" alt="" srcset="">
 
     </a>
     <div class="sidebar-content">

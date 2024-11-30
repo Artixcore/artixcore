@@ -13,7 +13,7 @@ class IndexPageController extends Controller
 {
     public function index(){
         $heroArticles = Article::where('page_article', 'hero')->get();
-
-        return view('frontend.Home.hero', compact('heroArticles'));
+        $services = Service::all();
+        return view('frontend.welcome', compact('heroArticles','services'));
     }
 }
