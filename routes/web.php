@@ -29,6 +29,9 @@ use App\Http\Controllers\SubSubMenuController;
 use App\Http\Controllers\Client\ClientController;
 use App\Http\Controllers\Service\ServiceController;
 use App\Http\Controllers\Project\ProjectController;
+use App\Http\Controllers\FaqController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -72,6 +75,8 @@ Route::post('/upload-image', [ImageUploadController::class, 'uploadImage'])->nam
 
 
 Auth::routes();
+
+Route::resource('faqs', FaqController::class);
 
 //Services
 Route::resource('services', ServiceController::class);

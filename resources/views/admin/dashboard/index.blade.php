@@ -3,11 +3,14 @@
     <main class="content">
         <div class="container-fluid">
 
+
+            {{-- git clone https://Artixcore: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@https://github.com/Artixcore/artixcore.git .  --}}
+
             <div class="header">
                 <h1 class="header-title">
-                    Welcome back, Admin!
+                    Welcome back, {{Auth::user()->name}}
                 </h1>
-                <p class="header-subtitle">You have 24 new messages and 5 new notifications.</p>
+                {{-- <p class="header-subtitle">You have 24 new messages and 5 new notifications.</p> --}}
             </div>
 
             <div class="row">

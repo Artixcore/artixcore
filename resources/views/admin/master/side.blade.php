@@ -41,12 +41,8 @@
                 <ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
                     <li class="sidebar-item"><a class="sidebar-link" href="{{route('clients.index')}}">Clients</a></li>
                     <li class="sidebar-item"><a class="sidebar-link" href="{{route('projects.index')}}">Projects</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='pages-reset-password.html'>Reset
-                            Password</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='pages-404.html'>404
-                            Page</a></li>
-                    <li class="sidebar-item"><a class='sidebar-link' href='pages-500.html'>500
-                            Page</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{route('faqs.index')}}">FAQ</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{route('projects.index')}}">Contact</a></li>
                 </ul>
             </li>
 
