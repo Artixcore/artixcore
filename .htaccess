@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+    # Turn on the rewrite engine
+    RewriteEngine On
+
+    # Redirect all requests to the public folder
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# Deny access to sensitive files
+<FilesMatch "\.(env|json|config|lock|log|phpunit|sqlite)$">
+    Require all denied
+</FilesMatch>
+
+# Block access to directories
+<DirectoryMatch "/(app|bootstrap|config|database|resources|routes|storage|tests|vendor)/">
+    Require all denied
+</DirectoryMatch>
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect .htaccess itself
+<Files .htaccess>
+    Require all denied
+</Files>

@@ -4,7 +4,7 @@
 @section('content')
     <main class="content">
         <div class="container-fluid">
-            <div class="col-md-8">
+
                 <div class="card">
                     <div class="card-header">
                         <h2 style="float: left;">Menu List</h2>
@@ -46,7 +46,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
+
             </div>
         </div>
     </main>
