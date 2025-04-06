@@ -19,40 +19,38 @@ class ArticleController extends Controller
     public function articlestore(Request $request)
     {
         $content = new Article();
-        // $content->number = $request->title . uniqid();
+        // Create unique number for the article
         $content->number = str_replace(' ', '-', $request->title) . uniqid();
         $content->title = $request->title;
         $content->article_type = $request->article_type;
         $content->author_id = Auth::user()->id;
-        // $content->article_url = $request->article_url;
         $content->subject = $request->subject;
         $content->short_desc = $request->short_desc;
-        // $content->content = $request->content;
 
-        // Handle primary image upload
+        // Handle primary image upload (only one image)
         if ($request->hasFile('primary_image')) {
-            if ($content->primaryImage) {
-                // Delete the existing image
-                Storage::disk('public')->delete($content->primaryImage->image_file);
-                $content->primaryImage->delete();
-            }
-
             // Get the original file name
             $originalName = $request->file('primary_image')->getClientOriginalName();
             // Store the image with the original name
-            $imagePathaa = $request->file('primary_image')->storeAs('images', $originalName, 'public');
+            $imagePath = $request->file('primary_image')->storeAs('images', $originalName, 'public');
 
-            $content->primary_image = $imagePathaa;
+            // Store the image path
+            $content->primary_image = $imagePath;
         }
 
-        // Handle additional image upload
-        if ($request->hasFile('image')) {
-            if ($content->image) {
-                // Delete the existing image
-                Storage::disk('public')->delete($content->image->image_file);
-                $content->image->delete();
-            }
+        // Handle nullable video upload
+        if ($request->hasFile('video')) {
+            // Get the original file name
+            $originalName = $request->file('video')->getClientOriginalName();
+            // Store the video with the original name
+            $videoPath = $request->file('video')->storeAs('videos', $originalName, 'public');
 
+            // Save the video file path
+            $content->video = $videoPath;
+        }
+
+        // Handle nullable additional image upload (second image)
+        if ($request->hasFile('image')) {
             // Get the original file name
             $originalName = $request->file('image')->getClientOriginalName();
             // Store the image with the original name
@@ -61,45 +59,22 @@ class ArticleController extends Controller
             // Create new image record
             $image = ArtixcorePhoto::create([
                 'user_id' => Auth::user()->id,
-                'number' => "p". uniqid(),
+                'number' => "p" . uniqid(),
                 'image_for' => 'article',
                 'image_from' => 'article_form',
                 'image_title' => $originalName,
                 'image_file' =>  $imagePath, // Save the original file name
             ]);
+
             $content->image_id = $image->id;
-        }
-
-        // Handle video upload
-        if ($request->hasFile('video')) {
-            if ($content->video) {
-                // Delete the existing video
-                Storage::disk('public')->delete($content->video->video_file);
-                $content->video->delete();
-            }
-
-            // Get the original file name
-            $originalName = $request->file('video')->getClientOriginalName();
-            // Store the video with the original name
-            $videoPath = $request->file('video')->storeAs('videos', $originalName, 'public');
-
-            // Create new video record
-            $video = ArtixcoreVideo::create([
-                'user_id' => Auth::user()->id,
-                'number' => "V". uniqid(),
-                'video_for' => 'article',
-                'video_from' => 'article_form',
-                'video_title' => $originalName,
-                'video_file' =>  $videoPath,// Save the original file name
-            ]);
-            $content->video_id = $video->id;
         }
 
         // Save the article
         $content->save();
 
-        return back()->with('success', 'Article updated successfully.');
+        return back()->with('success', 'Article created successfully.');
     }
+
 
 
     public function articleupdate(Request $request, Article $content)
