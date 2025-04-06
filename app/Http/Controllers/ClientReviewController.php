@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\ClientReview;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class ClientReviewController extends Controller
 {
@@ -20,20 +22,26 @@ class ClientReviewController extends Controller
 
     public function store(Request $request)
     {
-        $data = $request->validate([
-            'name' => 'required',
-            'position' => 'nullable',
-            'review' => 'required',
-            'image' => 'nullable|image',
+        $validated = $request->validate([
+            'name'     => 'required|string|max:255',
+            'position' => 'nullable|string|max:255',
+            'review'   => 'required|string',
+            'image'    => 'nullable|image|max:2048',
         ]);
 
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('client_reviews', 'public');
+            $originalName = Str::slug(pathinfo($request->image->getClientOriginalName(), PATHINFO_FILENAME));
+            $extension = $request->image->getClientOriginalExtension();
+            $fileName = $originalName . '.' . $extension;
+
+            // Save to storage/app/client_reviews
+            $path = $request->file('image')->storeAs('client_reviews', $fileName, 'public');
+            $validated['image'] = $path;
         }
 
-        ClientReview::create($data);
+        ClientReview::create($validated);
 
-        return redirect()->route('client-reviews.index')->with('success', 'Review added');
+        return redirect()->route('client-reviews.index')->with('success', 'Review added successfully.');
     }
 
     public function edit(ClientReview $clientReview)

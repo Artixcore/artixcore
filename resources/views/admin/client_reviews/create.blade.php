@@ -7,7 +7,7 @@
                 <div class="col-md-8">
                     <div class="card flex-fill w-100">
                         <div class="card-header">
-                            <h2>Create FAQ</h2>
+                            <h2>Client's Review</h2>
                         </div>
                         <div class="card-body">
                             <form action="{{ route('client-reviews.store') }}" method="POST" enctype="multipart/form-data">
