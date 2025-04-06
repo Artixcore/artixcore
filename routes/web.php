@@ -14,7 +14,7 @@ use App\Http\Controllers\SEO\SEODashboardController;
 use App\Http\Controllers\Writer\WriterDashboardController;
 
 use App\Http\Controllers\Frontend\IndexPageController;
-
+use App\Http\Controllers\ClientReviewController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\HeroController;
 use App\Http\Controllers\Backend\DashboardController;
@@ -72,6 +72,7 @@ Route::post('/upload-image', [ImageUploadController::class, 'uploadImage'])->nam
 
 Auth::routes();
 Route::resource('faqs', FaqController::class);
+Route::resource('client-reviews', ClientReviewController::class);
 //Services
 Route::resource('services', ServiceController::class);
 

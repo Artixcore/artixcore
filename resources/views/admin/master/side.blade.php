@@ -43,6 +43,7 @@
                     <li class="sidebar-item"><a class="sidebar-link" href="{{route('projects.index')}}">Projects</a></li>
                     <li class="sidebar-item"><a class="sidebar-link" href="{{route('faqs.index')}}">FAQ</a></li>
                     <li class="sidebar-item"><a class="sidebar-link" href="{{route('projects.index')}}">Contact</a></li>
+                    <li class="sidebar-item"><a class="sidebar-link" href="{{route('client-reviews.index')}}">Clients Review</a></li>
                 </ul>
             </li>
 
