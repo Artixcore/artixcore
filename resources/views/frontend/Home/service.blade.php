@@ -3,7 +3,7 @@ Services START -->
 @php
      $services = \App\Models\Service::all();
 @endphp
-<section class="position-relative overflow-hidden">
+<section class="position-relative overflow-hidden" id="Service">
     <div class="container position-relative">
         <!-- Title -->
         <div class="inner-container-small text-center">
