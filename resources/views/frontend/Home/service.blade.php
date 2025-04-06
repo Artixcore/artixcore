@@ -1,5 +1,8 @@
 <!-- =======================
 Services START -->
+@php
+     $services = \App\Models\Service::all();
+@endphp
 <section class="position-relative overflow-hidden">
     <div class="container position-relative">
         <!-- Title -->

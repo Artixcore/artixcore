@@ -1,9 +1,9 @@
 <nav id="sidebar" class="sidebar">
-    <a class="sidebar-brand text-center">
+    {{-- <a class="sidebar-brand text-center">
 
-        <img src="{{ asset('logo.png') }}" alt="" srcset="">
+        {{-- <img src="{{ asset('logo.png') }}" alt="" srcset=""> --}}
 
-    </a>
+    </a> --}}
     <div class="sidebar-content">
 
         <ul class="sidebar-nav">
@@ -13,7 +13,7 @@
             {{-- <li class="sidebar-item active"> --}}
             <li class="sidebar-item">
                 <a class="sidebar-link" href="{{ route('admin') }}">
-                    <i class="align-middle me-2 fas fa-fw fa-home"></i> <span class="align-middle">Dashboards</span>
+                    <i class="align-middle me-2 fas fa-fw fa-home"></i> <span class="align-middle">Dashboard</span>
                 </a>
             </li>
 

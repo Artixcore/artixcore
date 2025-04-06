@@ -66,10 +66,6 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
-
-
-
-
 Route::post('/upload-image', [ImageUploadController::class, 'uploadImage'])->name('upload.image');
 // Route::post('/submit-form', [FormController::class, 'store'])->name('submit.form');
 

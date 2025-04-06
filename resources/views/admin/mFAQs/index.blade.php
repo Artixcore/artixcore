@@ -6,7 +6,7 @@
                 <div class="card-header">
                     <h2 style="float: left;">FAQ List</h2>
 
-                    <a href="{{ route('faqs.create') }}" class="btn btn-outline-success">Create FAQ</a>
+                    <a style="float: right;" href="{{ route('faqs.create') }}" class="btn btn-outline-success">Create FAQ</a>
                 </div>
 
                 @if (session('success'))
