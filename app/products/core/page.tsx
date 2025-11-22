@@ -1,4 +1,13 @@
 import Button from '@/components/ui/Button';
+import { generatePageMetadata } from '@/lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Core Platform',
+  description: 'Comprehensive solution for enterprise needs with advanced analytics and automation capabilities.',
+  path: '/products/core',
+  keywords: ['core platform', 'enterprise solutions', 'analytics', 'automation'],
+});
 
 export default function CoreProductPage() {
   return (

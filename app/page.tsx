@@ -1,6 +1,40 @@
 import Hero from '@/components/layout/Hero';
 import ProductCard from '@/components/ui/ProductCard';
 import Button from '@/components/ui/Button';
+import StructuredData from '@/components/seo/StructuredData';
+import type { Metadata } from 'next';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://artixcore.com';
+
+export const metadata: Metadata = {
+  title: 'Home',
+  description: 'Empowering organizations with intelligent solutions and cutting-edge technology. Trusted by Fortune 500 companies and global enterprises.',
+  openGraph: {
+    title: 'Artixcore - Intelligent Solutions Platform',
+    description: 'Empowering organizations with intelligent solutions and cutting-edge technology',
+    url: siteUrl,
+    siteName: 'Artixcore',
+    images: [
+      {
+        url: `${siteUrl}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'Artixcore - Intelligent Solutions Platform',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Artixcore - Intelligent Solutions Platform',
+    description: 'Empowering organizations with intelligent solutions and cutting-edge technology',
+    images: [`${siteUrl}/twitter-image.jpg`],
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+};
 
 const products = [
   {
@@ -62,8 +96,45 @@ const trustIndicators = [
 ];
 
 export default function Home() {
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Artixcore',
+    url: siteUrl,
+    description: 'Empowering organizations with intelligent solutions and cutting-edge technology',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${siteUrl}/search?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
+  const organizationData = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Artixcore',
+    url: siteUrl,
+    logo: `${siteUrl}/logo.png`,
+    description: 'Empowering organizations with intelligent solutions and cutting-edge technology',
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'US',
+    },
+    sameAs: [
+      'https://twitter.com/artixcore',
+      'https://www.linkedin.com/company/artixcore',
+      'https://github.com/artixcore',
+    ],
+  };
+
   return (
     <>
+      <StructuredData data={structuredData} />
+      <StructuredData data={organizationData} />
+      
       {/* Hero Section */}
       <Hero
         title="World's Leading Intelligence-Driven Platform"

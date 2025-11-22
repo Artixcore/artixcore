@@ -1,5 +1,14 @@
 import Button from '@/components/ui/Button';
 import ProductCard from '@/components/ui/ProductCard';
+import { generatePageMetadata } from '@/lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Our Products',
+  description: 'Discover our comprehensive suite of products designed to meet your business needs. From core platforms to enterprise solutions.',
+  path: '/products',
+  keywords: ['products', 'enterprise solutions', 'business software', 'platform'],
+});
 
 const products = [
   {

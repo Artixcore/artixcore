@@ -1,4 +1,13 @@
 import Button from '@/components/ui/Button';
+import { generatePageMetadata } from '@/lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = generatePageMetadata({
+  title: 'Solutions',
+  description: 'Explore solutions designed for your industry, use case, or role. Tailored solutions for every business need.',
+  path: '/solutions',
+  keywords: ['solutions', 'industry solutions', 'business solutions', 'enterprise solutions'],
+});
 
 const solutions = [
   {

@@ -1,3 +1,13 @@
+import { generatePageMetadata } from '@/lib/metadata';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = generatePageMetadata({
+  title: 'About Us',
+  description: 'Learn about Artixcore - a leading provider of intelligent solutions and cutting-edge technology, empowering organizations worldwide.',
+  path: '/company/about',
+  keywords: ['about', 'company', 'mission', 'technology company'],
+});
+
 export default function AboutPage() {
   return (
     <div className="py-20">
