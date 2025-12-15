@@ -29,9 +29,7 @@
 ---
 
 ### Featured work
-- ⭐ **Project 1** — short one-liner (link)
-- 🚀 **Project 2** — short one-liner (link)
-- 🧪 **Project 3** — short one-liner (link)
+
 
 ---
 
