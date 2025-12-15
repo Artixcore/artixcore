@@ -1,4 +1,3 @@
-# You found me 👋  
 ## I’m Ismam Tabriz (Shams)
 
 I’m a **Full-Stack Engineer, Technical Founder, and Systems Thinker** building long-term, scalable platforms at the intersection of **AI, SaaS, fintech, and infrastructure**.
