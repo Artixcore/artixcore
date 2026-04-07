@@ -1,4 +1,4 @@
-# ⚙️ Artixcore Technology
+# Artixcore LLC, Goergia
 
 **Artixcore** is a technology company building long-term, scalable systems across **AI, SaaS, fintech, and infrastructure**.
 
