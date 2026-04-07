@@ -1,4 +1,4 @@
-# Artixcore LLC, Goergia
+# Artixcore LLC, Georgia
 
 **Artixcore** is a technology company building long-term, scalable systems across **AI, SaaS, fintech, and infrastructure**.
 
