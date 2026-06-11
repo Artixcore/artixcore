@@ -1,4 +1,4 @@
-# Artixcore Inc, Georgia
+# Artixcore Inc, Delware, USA
 
 **Artixcore** is a technology company building long-term, scalable systems across **AI, SaaS, fintech, and infrastructure**.
 
