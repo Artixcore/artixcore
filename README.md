@@ -1,4 +1,4 @@
-# Artixcore Inc. — Delaware, USA
+# Artixcore Inc. Delaware, USA
 
 **Artixcore** is a technology company building long-term, scalable systems across **AI, SaaS, fintech, commerce, automation, infrastructure, and advanced engineering**.
 
