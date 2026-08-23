@@ -2,7 +2,7 @@
 
 **Artixcore** is a technology company building long-term, scalable systems across **AI, SaaS, fintech, commerce, automation, infrastructure, and advanced engineering**.
 
-We donâ€™t build for trends.
+We don't build for trends.
 We build systems designed to endure.
 
 ---
