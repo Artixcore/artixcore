@@ -61,7 +61,7 @@ Focus areas include:
 
 ---
 
-### ðŸ›’ Commerce, Retail & Business Automation
+### Commerce, Retail & Business Automation
 
 Artixcore develops commerce infrastructure for modern businesses, especially multi-vendor, POS, inventory, and digital sales ecosystems.
 
@@ -78,7 +78,7 @@ Focus areas include:
 
 ---
 
-### ðŸ“ˆ Trading & Quant Systems
+### Trading & Quant Systems
 
 Artixcore is building AI-driven trading infrastructure designed for strategy execution, market analysis, and intelligent automation.
 
