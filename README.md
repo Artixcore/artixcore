@@ -2,12 +2,12 @@
 
 **Artixcore** is a technology company building long-term, scalable systems across **AI, SaaS, fintech, commerce, automation, infrastructure, and advanced engineering**.
 
-We don’t build for trends.
+We donâ€™t build for trends.
 We build systems designed to endure.
 
 ---
 
-## 🧭 Vision
+## ðŸ§­ Vision
 
 Artixcore exists to engineer **intelligent, secure, and scalable digital ecosystems** that operate as foundational infrastructure for the next generation of software.
 
@@ -22,13 +22,13 @@ Our approach is simple:
 
 ---
 
-## 🏗️ Core Domains
+## ðŸ—ï¸ Core Domains
 
 Artixcore operates across multiple high-impact domains.
 
 ---
 
-### 🤖 AI Systems & Infrastructure
+### ðŸ¤– AI Systems & Infrastructure
 
 We design AI-native systems that combine software engineering, automation, agents, and scalable infrastructure.
 
@@ -45,7 +45,7 @@ Focus areas include:
 
 ---
 
-### 📊 Enterprise SaaS Platforms
+### ðŸ“Š Enterprise SaaS Platforms
 
 Artixcore builds large-scale SaaS platforms for businesses, teams, creators, retailers, and operators.
 
@@ -61,7 +61,7 @@ Focus areas include:
 
 ---
 
-### 🛒 Commerce, Retail & Business Automation
+### ðŸ›’ Commerce, Retail & Business Automation
 
 Artixcore develops commerce infrastructure for modern businesses, especially multi-vendor, POS, inventory, and digital sales ecosystems.
 
@@ -78,7 +78,7 @@ Focus areas include:
 
 ---
 
-### 📈 Trading & Quant Systems
+### ðŸ“ˆ Trading & Quant Systems
 
 Artixcore is building AI-driven trading infrastructure designed for strategy execution, market analysis, and intelligent automation.
 
@@ -95,7 +95,7 @@ Focus areas include:
 
 ---
 
-### 🧪 Research & Advanced Engineering
+### ðŸ§ª Research & Advanced Engineering
 
 Artixcore invests in long-term research and advanced engineering initiatives that go beyond conventional SaaS.
 
@@ -111,7 +111,7 @@ Focus areas include:
 
 ---
 
-## 🚀 Key Platforms & Projects
+## ðŸš€ Key Platforms & Projects
 
 ---
 
@@ -162,9 +162,9 @@ Core capabilities include:
 
 Dealzyro is built with a clear separation between:
 
-* **Backoffice** — for Artixcore/Dealzyro platform operators
-* **Merchant/Admin Panel** — for store owners and business users
-* **End-User Storefronts** — for customers purchasing products
+* **Backoffice** â€” for Artixcore/Dealzyro platform operators
+* **Merchant/Admin Panel** â€” for store owners and business users
+* **End-User Storefronts** â€” for customers purchasing products
 
 The platform is designed to become a serious commerce infrastructure layer, not just another online store builder.
 
@@ -195,7 +195,7 @@ Core capabilities include:
 
 ContentPilot is designed as a practical AI system for modern content operations: fast enough for daily publishing, structured enough for teams, and secure enough for serious business use.
 
-It is part of Artixcore’s broader strategy to build AI-native SaaS platforms that combine automation, intelligence, and durable business infrastructure.
+It is part of Artixcoreâ€™s broader strategy to build AI-native SaaS platforms that combine automation, intelligence, and durable business infrastructure.
 
 ---
 
@@ -207,14 +207,14 @@ It is inspired by the best ideas from Firebase, Supabase, backend-as-a-service p
 
 Core modules include:
 
-* **SmartDB** — relational and vector storage
-* **NeuroAuth** — AI-aware authentication and identity logic
-* **PromptLogic** — intent-based execution layer
-* **Realtime Brain** — event mesh and real-time communication
-* **CodeMind** — code-aware AI agents
-* **WhisperVault** — media and voice intelligence layer
-* **GuardianX** — security-first protection layer
-* **Interface-as-Code** — UI and backend generation through structured intent
+* **SmartDB** â€” relational and vector storage
+* **NeuroAuth** â€” AI-aware authentication and identity logic
+* **PromptLogic** â€” intent-based execution layer
+* **Realtime Brain** â€” event mesh and real-time communication
+* **CodeMind** â€” code-aware AI agents
+* **WhisperVault** â€” media and voice intelligence layer
+* **GuardianX** â€” security-first protection layer
+* **Interface-as-Code** â€” UI and backend generation through structured intent
 
 ART Engine is not just a backend tool.
 It is designed to become infrastructure for building intelligent applications faster, safer, and at greater scale.
@@ -259,7 +259,7 @@ ART-Lang is intended for AI systems, distributed computation, agent orchestratio
 
 ## Project Helion
 
-**Project Helion** is Artixcore’s long-term Artificial Superintelligence research initiative.
+**Project Helion** is Artixcoreâ€™s long-term Artificial Superintelligence research initiative.
 
 Helion is envisioned as a general-purpose, ethical, guardian-style intelligence system capable of advanced reasoning across science, mathematics, software engineering, cybersecurity, strategy, and autonomous agent creation.
 
@@ -274,11 +274,11 @@ Research areas include:
 * Long-horizon planning
 * Advanced knowledge systems
 
-Helion represents Artixcore’s deepest research ambition: building intelligence that can reason, engineer, protect, and create with discipline.
+Helion represents Artixcoreâ€™s deepest research ambition: building intelligence that can reason, engineer, protect, and create with discipline.
 
 ---
 
-## 🧰 Technology Stack
+## ðŸ§° Technology Stack
 
 ---
 
@@ -344,7 +344,7 @@ Helion represents Artixcore’s deepest research ambition: building intelligence
 
 ---
 
-## 🔐 Engineering Principles
+## ðŸ” Engineering Principles
 
 Artixcore engineering is guided by a simple belief:
 
@@ -365,7 +365,7 @@ Our principles:
 
 ---
 
-## 🧩 Product Philosophy
+## ðŸ§© Product Philosophy
 
 Artixcore does not aim to build disconnected products.
 
@@ -388,23 +388,93 @@ Together, they form the foundation of a larger Artixcore ecosystem.
 
 ---
 
-## 🏢 Leadership
+## ðŸ¢ Founder & Engineering Leadership
 
-**Founder & CEO**
-Ismam Tabriz Shams
+### Ismam Tabriz Shams
 
-Artixcore is led with a systems-first mindset: build patiently, engineer deeply, and create platforms that can grow beyond the first version.
+**Founder & CEO, Artixcore | Backend Software Engineer**
+
+Ismam Tabriz Shams is a backend software engineer and the founder of Artixcore. His work focuses on designing dependable backend systems, REST APIs, relational data models, multi-tenant services, caching layers, and cloud-deployed applications.
+
+He works primarily with **Java and Spring Boot**, with practical backend and systems development in **Go and Rust**. His broader engineering stack includes **PostgreSQL, Redis, AWS, Linux, Git, GitHub Actions, CI/CD, SQL, and TypeScript**.
+
+His engineering approach is grounded in careful debugging, explicit validation, secure authorization boundaries, tenant isolation, readable code, and small changes that can be verified through tests and CI. He leads Artixcore with a systems-first principle: build patiently, engineer deeply, and create platforms that can survive beyond their first version.
+
+### Professional Experience
+
+#### Software Engineer â€” Artixcore
+
+**January 2021â€“Present | Remote**
+
+* Designs backend architecture, REST APIs, authentication flows, relational data models, Redis-backed services, and tenant-aware application boundaries for SaaS products.
+* Develops Java and Spring Boot services alongside engineering projects in Go and Rust, applying modular design, validation, testing, and language-appropriate error handling.
+* Investigates CI failures, API defects, database issues, cache behavior, and deployment problems across application and infrastructure layers.
+* Configures AWS EC2 and Linux deployments, environment-based application settings, Git workflows, and GitHub Actions checks.
+* Documents system architecture, API behavior, operational configuration, and verification requirements.
+
+#### Software Engineer â€” Prosperofy LLC
+
+**2024â€“2026 | Remote**
+
+* Developed and maintained backend functionality, database operations, API integrations, authentication, validation, and business logic for web applications.
+* Diagnosed defects across application code, SQL queries, external services, and deployment configuration.
+* Delivered maintainable fixes through Git-based review workflows and supported release and production troubleshooting activities.
+
+#### Software Engineer â€” Digital IT Ltd
+
+**2023â€“2024 | Bangladesh**
+
+* Built and maintained web application features, REST endpoints, SQL-backed workflows, reusable backend modules, and third-party integrations.
+* Implemented authentication, authorization, server-side validation, CRUD operations, error handling, and database-backed business rules.
+
+### Core Engineering Skills
+
+* **Languages:** Java, Go, Rust, SQL, TypeScript
+* **Backend:** Spring Boot, REST APIs, authentication and authorization, validation, multi-tenant architecture
+* **Data:** PostgreSQL, Redis, MySQL, schema design, transactions, and caching
+* **Cloud and delivery:** AWS EC2, Linux, Docker fundamentals, Git, GitHub Actions, CI/CD, and production troubleshooting
+* **Engineering:** Object-oriented design, concurrency fundamentals, testing, debugging, code review, security-conscious development, and technical documentation
+
+### Selected Engineering Work
+
+* **ART Engine 2.0:** A Java and Spring Boot control-plane project with Maven build enforcement, an execution-kernel architecture, and staged engineering gates.
+* **ARTIX Arbitrage Engine:** An event-driven engineering project using Go, WebSockets, PostgreSQL/TimescaleDB, and Redis for market-data ingestion, order-book processing, paper execution, risk controls, replay, and backtesting.
+* **Artx Communication:** A secure-messaging backend design covering device identity, replay protection, persistent encrypted delivery, acknowledgements, offline expiry, attachments, and explicit failure behavior.
+* **Dealzyro:** A multi-tenant commerce and business-operations platform involving storefront behavior, authentication, tenant isolation, caching, AWS deployment configuration, and CI verification.
+
+### Education and Languages
+
+* **National University, Bangladesh:** Undergraduate studies in Psychology, 2017â€“2021
+* **Bengali:** Native
+* **English:** Professional working proficiency
 
 ---
 
-## 🌐 Presence
+## Professional Introduction
 
-* Website: https://artixcore.com
-* Email: [ismam.ceo@artixcore.com](mailto:ismam.ceo@artixcore.com)
+I am a backend software engineer specializing in Java, Spring Boot, Go, Rust, PostgreSQL, Redis, AWS, and disciplined Git-based delivery. My work centers on backend architecture, REST APIs, data modeling, multi-tenant services, caching, cloud deployment, and diagnosing failures across application and infrastructure layers.
+
+At Artixcore, I design and develop systems that require authentication, authorization, tenant-aware data boundaries, relational database design, Redis-backed behavior, and explicit validation and failure handling. I also work on systems-oriented projects where concurrency, predictable performance, and strong correctness boundaries matter.
+
+I am most effective when the work requires careful investigation rather than guesswork: reading an existing codebase, reproducing a failure, identifying where behavior diverges, implementing the smallest safe change, and verifying it through tests and CI. I value readable code, clear documentation, secure defaults, and honest engineering tradeoffs.
+
+I am open to professional discussions involving backend engineering, distributed systems, AI infrastructure, technical partnerships, and remote software engineering opportunities.
 
 ---
 
-## 📌 Status
+## ðŸŒ Professional Presence
+
+* **Company website:** https://artixcore.com
+* **Company email:** [ismam.ceo@artixcore.com](mailto:ismam.ceo@artixcore.com)
+* **Professional email:** [ismamtabriz26@gmail.com](mailto:ismamtabriz26@gmail.com)
+* **LinkedIn:** https://linkedin.com/in/ismamtabrizofficials
+* **GitHub:** https://github.com/Artixcore
+* **Location:** Khulna, Bangladesh
+* **Work preference:** Open to remote opportunities
+
+---
+
+## ðŸ“Œ Status
 
 Artixcore is actively developing and researching multiple platforms across AI, SaaS, commerce, fintech, and infrastructure.
 
@@ -420,5 +490,5 @@ Current major focus areas include:
 
 ---
 
-> “We don’t ship code.
-> We build systems that last.”
+> â€œWe donâ€™t ship code.
+> We build systems that last.â€
