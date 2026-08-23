@@ -1,4 +1,4 @@
-# Artixcore Inc. Delaware, USA
+# Artixcore LLC
 
 **Artixcore** is a technology company building long-term, scalable systems across **AI, SaaS, fintech, commerce, automation, infrastructure, and advanced engineering**.
 
@@ -7,7 +7,7 @@ We build systems designed to endure.
 
 ---
 
-## ðŸ§­ Vision
+## Vision
 
 Artixcore exists to engineer **intelligent, secure, and scalable digital ecosystems** that operate as foundational infrastructure for the next generation of software.
 
@@ -22,13 +22,13 @@ Our approach is simple:
 
 ---
 
-## ðŸ—ï¸ Core Domains
+## Core Domains
 
 Artixcore operates across multiple high-impact domains.
 
 ---
 
-### ðŸ¤– AI Systems & Infrastructure
+###  AI Systems & Infrastructure
 
 We design AI-native systems that combine software engineering, automation, agents, and scalable infrastructure.
 
@@ -45,7 +45,7 @@ Focus areas include:
 
 ---
 
-### ðŸ“Š Enterprise SaaS Platforms
+###  Enterprise SaaS Platforms
 
 Artixcore builds large-scale SaaS platforms for businesses, teams, creators, retailers, and operators.
 
@@ -95,7 +95,7 @@ Focus areas include:
 
 ---
 
-### ðŸ§ª Research & Advanced Engineering
+###  Research & Advanced Engineering
 
 Artixcore invests in long-term research and advanced engineering initiatives that go beyond conventional SaaS.
 
@@ -111,7 +111,7 @@ Focus areas include:
 
 ---
 
-## ðŸš€ Key Platforms & Projects
+## Key Platforms & Projects
 
 ---
 
@@ -365,7 +365,7 @@ Our principles:
 
 ---
 
-## ðŸ§© Product Philosophy
+## Product Philosophy
 
 Artixcore does not aim to build disconnected products.
 
@@ -388,7 +388,7 @@ Together, they form the foundation of a larger Artixcore ecosystem.
 
 ---
 
-## ðŸ¢ Founder & Engineering Leadership
+## Founder & Engineering Leadership
 
 ### Ismam Tabriz Shams
 
@@ -412,7 +412,7 @@ His engineering approach is grounded in careful debugging, explicit validation, 
 * Configures AWS EC2 and Linux deployments, environment-based application settings, Git workflows, and GitHub Actions checks.
 * Documents system architecture, API behavior, operational configuration, and verification requirements.
 
-#### Software Engineer â€” Prosperofy LLC
+#### Software Engineer at Prosperofy LLC
 
 **2024â€“2026 | Remote**
 
@@ -462,7 +462,7 @@ I am open to professional discussions involving backend engineering, distributed
 
 ---
 
-## ðŸŒ Professional Presence
+## Professional Presence
 
 * **Company website:** https://artixcore.com
 * **Company email:** [ismam.ceo@artixcore.com](mailto:ismam.ceo@artixcore.com)
@@ -474,7 +474,7 @@ I am open to professional discussions involving backend engineering, distributed
 
 ---
 
-## ðŸ“Œ Status
+## Status
 
 Artixcore is actively developing and researching multiple platforms across AI, SaaS, commerce, fintech, and infrastructure.
 
@@ -490,5 +490,5 @@ Current major focus areas include:
 
 ---
 
-> â€œWe donâ€™t ship code.
+> We Don't ship code.
 > We build systems that last.â€
