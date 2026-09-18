@@ -1,4 +1,4 @@
-<h1 align="center">Hey <img src="https://raw.githubusercontent.com/SP-XD/SP-XD/refs/heads/main/images/Developer.gif" height="30px" width="30px"> I'm Artixcore - Ismam Tabriz</h1>
+<h1 align="center"><img src="https://raw.githubusercontent.com/SP-XD/SP-XD/refs/heads/main/images/Developer.gif" height="30px" width="30px"> Artixcore - Ismam Tabriz</h1>
 <h3 align="center">Software Development - Blockchain - Artificial Intelligence - Web3 - Math</h3>
 
 <p align="center">
